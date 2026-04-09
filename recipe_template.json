@@ -1,0 +1,44 @@
+{
+  "title": "Recipe Title Here",
+  "slug": "recipe-title-here",
+  "image_url": "https://example.com/image.jpg",
+  "image_alt": "Description of the dish",
+  "source_url": "https://example.com/original-recipe",
+  "source_label": "Original recipe: Site Name",
+  "prep_min": 15,
+  "cook_min": 30,
+  "servings": 4,
+  "tags": "Vegan · GF · Soy-free",
+  "card_tag": "Modified",
+  "modifications": [
+    "Change 1 description",
+    "Change 2 description"
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Group Label (optional)",
+      "items": [
+        {"amount": "1 cup", "name": "ingredient name", "modified": false},
+        {"amount": "to taste", "name": "modified ingredient ✱ replaces original", "modified": true}
+      ]
+    },
+    {
+      "label": "Another Group",
+      "items": [
+        {"amount": "2 tsp", "name": "spice", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "First instruction step.",
+    "Second instruction step.",
+    "Third instruction step."
+  ],
+  "nutrition": {
+    "Calories": "300",
+    "Carbs": "40g",
+    "Protein": "10g",
+    "Fat": "8g",
+    "Fiber": "6g"
+  }
+}
