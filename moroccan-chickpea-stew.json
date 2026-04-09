@@ -1,0 +1,65 @@
+{
+  "title": "Moroccan-Style Chickpea Stew",
+  "slug": "moroccan-style-chickpea-stew",
+  "image_url": "https://bestofvegancom.b-cdn.net/wp-content/uploads/2023/05/Devorah-Bowen-09628-scaled.jpg",
+  "image_alt": "Moroccan-Style Chickpea Stew served over couscous",
+  "source_url": "https://bestofvegan.com/moroccan-style-chickpea-stew/",
+  "source_label": "Original recipe: Best of Vegan",
+  "prep_min": 15,
+  "cook_min": 50,
+  "servings": 4,
+  "tags": "Vegan · GF option",
+  "card_tag": "Modified",
+  "modifications": [
+    "Omitted Ras El Hanout — skipped entirely rather than substituting",
+    "Omitted Harissa — left out the heat"
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Base",
+      "items": [
+        {"amount": "2 Tbsp", "name": "olive oil", "modified": false},
+        {"amount": "1 medium", "name": "onion, diced", "modified": false},
+        {"amount": "4 cloves", "name": "garlic, minced", "modified": false},
+        {"amount": "30 oz", "name": "chickpeas, drained", "modified": false},
+        {"amount": "2 cups (330g)", "name": "sweet potatoes, cubed", "modified": false}
+      ]
+    },
+    {
+      "label": "Spices",
+      "items": [
+        {"amount": "1 tsp", "name": "sweet paprika", "modified": false},
+        {"amount": "", "name": "salt and pepper, to taste", "modified": false}
+      ]
+    },
+    {
+      "label": "Sauce",
+      "items": [
+        {"amount": "2 Tbsp", "name": "tomato paste", "modified": false},
+        {"amount": "28 oz", "name": "crushed tomatoes", "modified": false},
+        {"amount": "1 cup", "name": "vegetable broth", "modified": false}
+      ]
+    },
+    {
+      "label": "Finish",
+      "items": [
+        {"amount": "5 oz", "name": "baby spinach, roughly chopped", "modified": false},
+        {"amount": "2 Tbsp", "name": "fresh parsley, chopped (garnish)", "modified": false}
+      ]
+    },
+    {
+      "label": "Serve With",
+      "items": [
+        {"amount": "", "name": "couscous", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Heat oil in a large pot over medium heat. Sauté onions for 3–5 minutes until translucent. Add chickpeas and sweet potatoes; cook another 5–8 minutes.",
+    "Add paprika, tomato paste, and garlic. Mix and cook 2–3 minutes until fragrant.",
+    "Add crushed tomatoes and broth. Lower heat to medium-low and simmer covered for 35–40 minutes until sweet potatoes are soft, stirring occasionally.",
+    "Add spinach and cook until wilted. Adjust seasoning with salt and pepper.",
+    "Serve warm over couscous and garnish with parsley."
+  ],
+  "nutrition": null
+}
