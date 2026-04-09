@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baked Zucchini Chickpea Curry — Aaron's Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --ink: #1c1a18;
+      --muted: #6b6560;
+      --accent: #c07a3a;
+      --border: #e8e4de;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    .hero {
+      width: 100%;
+      max-height: 480px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .source-link:hover { text-decoration: underline; }
+
+    .mods-box {
+      background: #fffbf5;
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .mods-box h3 {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .mods-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mods-box ul li {
+      font-size: 0.9rem;
+      color: var(--ink);
+      padding: 0.2rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .mods-box ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 2rem 0 1rem;
+    }
+
+    .ingredients {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ingredients li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .ingredients li:last-child { border-bottom: none; }
+
+    .ingredients .amount {
+      min-width: 120px;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .ingredients li.modified {
+      color: var(--accent);
+    }
+
+    .ingredients li.modified .amount {
+      color: var(--accent);
+      opacity: 0.8;
+    }
+
+    .steps {
+      list-style: none;
+      counter-reset: steps;
+      padding: 0;
+    }
+
+    .steps li {
+      counter-increment: steps;
+      padding: 1rem 0 1rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .steps li:last-child { border-bottom: none; }
+
+    .steps li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    .nutrition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .nutrition-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .nutrition-item .value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      display: block;
+    }
+
+    .nutrition-item .label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .ingredient-group-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.75rem 0 0.3rem;
+      border-bottom: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">← Aaron's Recipes</a>
+  </nav>
+
+  <div class="hero">
+    <img src="https://www.veganricha.com/wp-content/uploads/2024/10/Baked-Chickpea-Zucchini-Curry-3617.jpg" alt="Baked Zucchini Chickpea Curry in a bowl with rice" />
+  </div>
+
+  <div class="content">
+
+    <h1>Baked Zucchini Chickpea Curry</h1>
+
+    <div class="meta-row">
+      <span>Prep: 15 min</span>
+      <span>Cook: 30 min</span>
+      <span>Serves: 4</span>
+      <span>Vegan · GF · Soy-free</span>
+    </div>
+
+    <a class="source-link" href="https://www.veganricha.com/baked-zucchini-chickpea-curry/" target="_blank" rel="noopener">Original recipe: Vegan Richa ↗</a>
+
+    <h2>My Changes</h2>
+    <div class="mods-box">
+      <h3>Aaron's Modifications</h3>
+      <ul>
+        <li>Omitted hot sauce and sambal oelek — substituted Sweet Chili Sauce instead</li>
+        <li>Added broccoli and cauliflower in similar quantities to the zucchini</li>
+        <li>Used garlic powder instead of fresh garlic / ginger garlic paste</li>
+      </ul>
+    </div>
+
+    <h2>Ingredients</h2>
+    <ul class="ingredients">
+      <li class="ingredient-group-label"><span>Vegetables</span></li>
+      <li><span class="amount">2 tsp</span><span>oil (for greasing)</span></li>
+      <li><span class="amount">1 cup</span><span>onion, chopped</span></li>
+      <li><span class="amount">1 medium</span><span>zucchini, sliced ¼" or cubed</span></li>
+      <li class="modified"><span class="amount">similar qty</span><span>broccoli florets ✱ added</span></li>
+      <li class="modified"><span class="amount">similar qty</span><span>cauliflower florets ✱ added</span></li>
+
+      <li class="ingredient-group-label"><span>Heat / Sauce</span></li>
+      <li class="modified"><span class="amount">to taste</span><span>Sweet Chili Sauce ✱ replaces hot sauce + sambal oelek</span></li>
+
+      <li class="ingredient-group-label"><span>Spices</span></li>
+      <li><span class="amount">2 tsp</span><span>ground coriander</span></li>
+      <li><span class="amount">1 tsp</span><span>ground cumin</span></li>
+      <li><span class="amount">1–2 tsp</span><span>garam masala</span></li>
+      <li><span class="amount">¼ tsp</span><span>salt</span></li>
+
+      <li class="ingredient-group-label"><span>Curry Base</span></li>
+      <li class="modified"><span class="amount">to taste</span><span>garlic powder ✱ replaces ginger garlic paste</span></li>
+      <li><span class="amount">8 oz</span><span>canned tomato puree (or 2 tbsp tomato paste)</span></li>
+      <li><span class="amount">15 oz</span><span>full-fat coconut milk</span></li>
+      <li><span class="amount">½ tsp</span><span>salt</span></li>
+      <li><span class="amount">15 oz can</span><span>chickpeas, drained</span></li>
+      <li><span class="amount">½ cup</span><span>frozen spinach (or more, to taste)</span></li>
+
+      <li class="ingredient-group-label"><span>Garnish</span></li>
+      <li><span class="amount"></span><span>cilantro and lime juice</span></li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol class="steps">
+      <li>Preheat oven to 400°F (205°C). Grease a 9×12" baking dish with oil. Add onion, zucchini, broccoli, cauliflower, and sweet chili sauce, tossing well.</li>
+      <li>Mix all spices in a small bowl and sprinkle over the veggie mixture. Spread evenly in the pan. Bake for 10–14 minutes until onions are translucent.</li>
+      <li>Remove from oven. Mix in garlic powder and tomato puree. Add coconut milk, chickpeas, and spinach. Stir well and spread evenly.</li>
+      <li>Return to oven and bake 20–30 minutes, until sauce is bubbling and slightly thickened. If you need it thicker, stir in a few tablespoons of non-dairy yogurt while still hot.</li>
+      <li>Garnish with cilantro and lime juice. Serve with rice, naan, flatbread, or garlic bread.</li>
+    </ol>
+
+    <h2>Nutrition <span style="font-family:'DM Sans';font-size:0.75rem;color:var(--muted);font-weight:300;">(per serving, original recipe)</span></h2>
+    <div class="nutrition-grid">
+      <div class="nutrition-item"><span class="value">284</span><span class="label">Calories</span></div>
+      <div class="nutrition-item"><span class="value">44g</span><span class="label">Carbs</span></div>
+      <div class="nutrition-item"><span class="value">12g</span><span class="label">Protein</span></div>
+      <div class="nutrition-item"><span class="value">7g</span><span class="label">Fat</span></div>
+      <div class="nutrition-item"><span class="value">11g</span><span class="label">Fiber</span></div>
+    </div>
+
+  </div>
+
+  <footer>Aaron's Recipes · <a class="source-link" href="https://www.veganricha.com/baked-zucchini-chickpea-curry/" target="_blank">Source</a></footer>
+
+</body>
+</html>
