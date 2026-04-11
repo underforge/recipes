@@ -1,0 +1,65 @@
+{
+  "title": "Ginger Sweet Potato Coconut Milk Stew",
+  "slug": "ginger-sweet-potato-coconut-milk-stew",
+  "image_url": "https://thefirstmess.com/wp-content/uploads/2020/02/18-11996-post/ginger-sweet-potato-coconut-stew-w-kale-lentils-6.jpg",
+  "image_alt": "Ginger sweet potato coconut milk stew with lentils and kale",
+  "source_url": "https://thefirstmess.com/2020/02/19/sweet-potato-coconut-milk-stew/",
+  "source_label": "Original recipe: The First Mess",
+  "prep_min": 20,
+  "cook_min": 45,
+  "servings": 6,
+  "tags": "Vegan · GF · Nut-free",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Base",
+      "items": [
+        {"amount": "1 Tbsp", "name": "coconut oil", "modified": false},
+        {"amount": "1 medium", "name": "yellow onion, small dice", "modified": false},
+        {"amount": "½–1 tsp", "name": "dried chili flakes", "modified": false},
+        {"amount": "½ tsp", "name": "ground coriander", "modified": false},
+        {"amount": "½ tsp", "name": "ground cumin", "modified": false},
+        {"amount": "½ tsp", "name": "ground turmeric", "modified": false},
+        {"amount": "2-inch piece", "name": "fresh ginger, peeled and minced", "modified": false},
+        {"amount": "3 cloves", "name": "garlic, peeled and minced", "modified": false},
+        {"amount": "", "name": "salt and black pepper, to taste", "modified": false}
+      ]
+    },
+    {
+      "label": "Stew",
+      "items": [
+        {"amount": "1½ lbs (690g)", "name": "sweet potatoes, peeled and diced into 1\" pieces", "modified": false},
+        {"amount": "½ cup", "name": "dry brown lentils, picked over", "modified": false},
+        {"amount": "4 cups", "name": "vegetable stock", "modified": false},
+        {"amount": "13.5 oz (400ml)", "name": "full-fat coconut milk", "modified": false}
+      ]
+    },
+    {
+      "label": "Finish",
+      "items": [
+        {"amount": "1 bunch (~4 cups)", "name": "kale, stems removed and leaves chopped", "modified": false}
+      ]
+    },
+    {
+      "label": "Garnish",
+      "items": [
+        {"amount": "", "name": "cilantro, extra chili flakes, lime wedges, nigella seeds", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Heat a large soup pot over medium heat. Melt coconut oil, add onion, and sauté until translucent and soft, about 5 minutes. Add chili flakes, coriander, cumin, and turmeric; sauté until fragrant, about 1 minute. Add ginger and garlic; cook 1 minute more. Season with salt and pepper.",
+    "Add sweet potatoes and stir to coat in the spices. Add lentils and stir again. Season liberally with salt and pepper. Pour in vegetable stock, scraping up any browned bits. Cover and bring to a boil.",
+    "Once boiling, reduce heat and simmer until sweet potatoes are nearly falling apart and lentils are tender, about 30 minutes. The liquid should reduce by roughly one-third.",
+    "Add coconut milk and kale; stir to combine. Cover and simmer until kale is wilted and bright green, 3–4 minutes. Taste and adjust salt, pepper, and chili as needed.",
+    "Serve hot, garnished with cilantro, chili flakes, lime wedges, and nigella seeds."
+  ],
+  "nutrition": {
+    "Calories": "305",
+    "Carbs": "35.5g",
+    "Protein": "7.25g",
+    "Fat": "14.6g",
+    "Fiber": "8.15g"
+  }
+}
