@@ -9,21 +9,25 @@
   "cook_min": 45,
   "servings": "10–12",
   "tags": "Vegetarian · Nut-free",
-  "card_tag": "",
-  "modifications": [],
+  "card_tag": "Modified",
+  "modifications": [
+    "Increased salt in filling from ⅛ tsp to ¼ tsp",
+    "Increased brown sugar in filling from ¼ cup to ½ cup",
+    "Kept all the peach juices — didn't strain before adding the biscuit topping"
+  ],
   "ingredient_groups": [
     {
       "label": "Peach Filling",
       "items": [
         {"amount": "10 cups (~1.8kg)", "name": "fresh peaches, peeled and chopped into 1–1½\" chunks", "modified": false},
-        {"amount": "¼ cup (50g)", "name": "packed light or dark brown sugar", "modified": false},
+        {"amount": "½ cup (100g)", "name": "packed light or dark brown sugar ✱ increased", "modified": true},
         {"amount": "1 Tbsp (7g)", "name": "cornstarch", "modified": false},
         {"amount": "1 Tbsp", "name": "fresh lemon juice", "modified": false},
         {"amount": "1 tsp", "name": "pure vanilla extract", "modified": false},
         {"amount": "½ tsp", "name": "ground cinnamon", "modified": false},
         {"amount": "⅛ tsp", "name": "ground nutmeg", "modified": false},
         {"amount": "⅛ tsp", "name": "ground ginger", "modified": false},
-        {"amount": "⅛ tsp", "name": "salt", "modified": false}
+        {"amount": "¼ tsp", "name": "salt ✱ increased", "modified": true}
       ]
     },
     {
