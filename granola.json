@@ -1,0 +1,49 @@
+{
+  "title": "Granola",
+  "slug": "granola",
+  "image_url": "images/granola.jpg",
+  "image_alt": "Homemade granola with dried fruit and nuts",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 10,
+  "cook_min": 20,
+  "servings": 10,
+  "tags": "Vegetarian · GF option",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Wet",
+      "items": [
+        {"amount": "¾ cup", "name": "butter", "modified": false},
+        {"amount": "¾ cup", "name": "honey", "modified": false},
+        {"amount": "2 Tbsp", "name": "ground cinnamon", "modified": false}
+      ]
+    },
+    {
+      "label": "Dry",
+      "items": [
+        {"amount": "4 cups", "name": "oats", "modified": false},
+        {"amount": "2 cups", "name": "shredded coconut", "modified": false},
+        {"amount": "2 cups", "name": "sunflower seeds", "modified": false},
+        {"amount": "1 cup", "name": "almonds", "modified": false},
+        {"amount": "¼ cup", "name": "ground flax", "modified": false}
+      ]
+    },
+    {
+      "label": "Add After Baking",
+      "items": [
+        {"amount": "¾ cup", "name": "walnuts or pecans", "modified": false},
+        {"amount": "¾ cup", "name": "dried fruit", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 325°F (165°C). Line a large rimmed baking sheet with parchment paper.",
+    "Melt butter and honey together in a large saucepan over low heat. Whisk in the cinnamon.",
+    "Stir in oats, coconut, sunflower seeds, almonds, and ground flax until everything is evenly coated.",
+    "Spread mixture in an even layer on the prepared pan. Bake for 15–20 minutes until golden, keeping an eye on it as ovens vary.",
+    "Remove from oven and immediately sprinkle walnuts or pecans and dried fruit over the top. Let cool completely on the pan — it will crisp up as it cools. Break into clusters and store in an airtight container."
+  ],
+  "nutrition": null
+}
