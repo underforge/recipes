@@ -1,0 +1,55 @@
+{
+  "title": "Pumpkin Pie",
+  "slug": "pumpkin-pie",
+  "image_url": "images/pumpkin-pie.jpg",
+  "image_alt": "Pumpkin pie with streusel topping",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 15,
+  "cook_min": 50,
+  "servings": 8,
+  "tags": "Vegetarian",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Crust",
+      "items": [
+        {"amount": "1", "name": "pie crust, store-bought or homemade", "modified": false}
+      ]
+    },
+    {
+      "label": "Filling",
+      "items": [
+        {"amount": "1 can", "name": "pumpkin purée", "modified": false},
+        {"amount": "2 large", "name": "eggs (or ¼ cup cornstarch for vegan)", "modified": false},
+        {"amount": "½ cup", "name": "milk", "modified": false},
+        {"amount": "½ cup", "name": "maple syrup", "modified": false},
+        {"amount": "¼ cup", "name": "sugar", "modified": false},
+        {"amount": "1 tsp", "name": "ground cinnamon", "modified": false},
+        {"amount": "1 tsp", "name": "ground ginger", "modified": false},
+        {"amount": "¼ tsp", "name": "ground cloves or allspice", "modified": false},
+        {"amount": "½ tsp", "name": "salt", "modified": false},
+        {"amount": "1 tsp", "name": "vanilla extract", "modified": false}
+      ]
+    },
+    {
+      "label": "Streusel Topping",
+      "items": [
+        {"amount": "¼ cup", "name": "all-purpose flour", "modified": false},
+        {"amount": "¼ cup", "name": "sugar", "modified": false},
+        {"amount": "¼ cup", "name": "chopped nuts", "modified": false},
+        {"amount": "2 Tbsp", "name": "butter, cold", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 375°F (190°C). Press pie crust into a 9-inch pie dish and crimp the edges.",
+    "Whisk together all filling ingredients until smooth. Pour into the unbaked crust.",
+    "Make the streusel: combine flour, sugar, and chopped nuts, then cut in the cold butter with a fork or your fingers until it resembles coarse crumbles.",
+    "Sprinkle the streusel evenly over the filling.",
+    "Bake for 45–55 minutes until the filling is set — it should be mostly firm with just a slight jiggle in the centre. If the crust edges are browning too fast, cover them with foil.",
+    "Cool completely on a rack before slicing. Refrigerate leftovers."
+  ],
+  "nutrition": null
+}
