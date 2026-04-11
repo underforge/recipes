@@ -432,8 +432,9 @@ def add_card_to_index(d: dict) -> None:
 
     tag_html = f'\n          <span class="tag">{card_tag}</span>' if card_tag else ""
 
-    # Recipe page uses ../images/ but index.html is at root, so strip the ../
-    card_image_url = image_url.replace("../images/", "images/")
+    # Local images live in recipes/images/. Recipe pages (in recipes/) use
+    # "images/filename.jpg"; index.html (at root) needs "recipes/images/filename.jpg"
+    card_image_url = image_url.replace("images/", "recipes/images/") if not image_url.startswith("http") else image_url
 
     card = f"""
       <a class="recipe-card" href="recipes/{slug}.html">
