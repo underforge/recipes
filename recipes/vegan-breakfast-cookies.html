@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vegan Breakfast Cookies — Bean Cooking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --ink: #1c1a18;
+      --muted: #6b6560;
+      --accent: #c07a3a;
+      --border: #e8e4de;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    .hero {
+      width: 100%;
+      max-height: 480px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .source-link:hover { text-decoration: underline; }
+
+    .mods-box {
+      background: #fffbf5;
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .mods-box h3 {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .mods-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mods-box ul li {
+      font-size: 0.9rem;
+      color: var(--ink);
+      padding: 0.2rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .mods-box ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 2rem 0 1rem;
+    }
+
+    .ingredients {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ingredients li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .ingredients li:last-child { border-bottom: none; }
+
+    .ingredients .amount {
+      min-width: 120px;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .ingredients li.modified {
+      color: var(--accent);
+    }
+
+    .ingredients li.modified .amount {
+      color: var(--accent);
+      opacity: 0.8;
+    }
+
+    .steps {
+      list-style: none;
+      counter-reset: steps;
+      padding: 0;
+    }
+
+    .steps li {
+      counter-increment: steps;
+      padding: 1rem 0 1rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .steps li:last-child { border-bottom: none; }
+
+    .steps li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    .nutrition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .nutrition-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .nutrition-item .value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      display: block;
+    }
+
+    .nutrition-item .label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .ingredient-group-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.75rem 0 0.3rem;
+      border-bottom: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">← Bean Cooking</a>
+  </nav>
+
+  <div class="hero">
+    <img src="../images/vegan-breakfast-cookies.jpg" alt="Vegan breakfast cookies on a cooling rack" />
+  </div>
+
+  <div class="content">
+
+    <h1>Vegan Breakfast Cookies</h1>
+
+    <div class="meta-row">
+      <span>Prep: 20 min</span>
+      <span>Cook: 20 min</span>
+      <span>Serves: 24 cookies</span>
+      <span>Vegan · GF option</span>
+    </div>
+
+    <a class="source-link" href="https://rainbowplantlife.com/healthy-vegan-breakfast-cookies/" target="_blank" rel="noopener">Original recipe: Rainbow Plant Life ↗</a>
+
+    <h2>My Changes</h2>
+    <div class="mods-box">
+      <h3>Aaron's Modifications</h3>
+      <ul>
+        <li>Used soy-free chocolate chunks in place of the dried fruit mix-in option</li>
+      </ul>
+    </div>
+
+    <h2>Ingredients</h2>
+    <ul class="ingredients">
+      <li class="ingredient-group-label"><span>Flax Egg</span></li>
+      <li><span class="amount">2 Tbsp</span><span>ground flaxseed meal</span></li>
+      <li><span class="amount">5 Tbsp</span><span>water</span></li>
+      <li class="ingredient-group-label"><span>Dry Ingredients</span></li>
+      <li><span class="amount">2 cups (190g)</span><span>rolled oats (certified GF if needed)</span></li>
+      <li><span class="amount">heaping ½ cup (50g)</span><span>unsweetened shredded coconut</span></li>
+      <li><span class="amount">½ tsp</span><span>baking powder</span></li>
+      <li><span class="amount">½ tsp</span><span>baking soda</span></li>
+      <li><span class="amount">½–1 tsp</span><span>ground cinnamon (optional)</span></li>
+      <li><span class="amount">½ tsp</span><span>fine sea salt</span></li>
+      <li class="ingredient-group-label"><span>Wet Ingredients</span></li>
+      <li><span class="amount">¾ cup (190g)</span><span>smooth almond butter (or cashew butter)</span></li>
+      <li><span class="amount">½ cup (160g)</span><span>pure maple syrup</span></li>
+      <li><span class="amount">1½ tsp</span><span>pure vanilla extract</span></li>
+      <li class="ingredient-group-label"><span>Mix-Ins</span></li>
+      <li class="modified"><span class="amount">½ cup (~75g)</span><span>soy-free chocolate chunks ✱ replaces dried fruit</span></li>
+      <li><span class="amount">½ cup (70g)</span><span>pepitas or sunflower seeds (or chopped nuts)</span></li>
+      <li><span class="amount">⅓ cup (48g)</span><span>hemp seeds (hemp hearts)</span></li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol class="steps">
+      <li>Make the flax egg: combine ground flaxseed meal with 5 Tbsp water. Stir and let sit for 10–15 minutes until gelled.</li>
+      <li>Arrange racks in the top and bottom thirds of the oven. Preheat to 350°F (175°C). Line two large sheet pans with parchment paper.</li>
+      <li>In a large bowl, mix together the dry ingredients: oats, coconut, baking powder, baking soda, salt, and cinnamon if using.</li>
+      <li>In a medium bowl, whisk together the wet ingredients: almond butter, maple syrup, vanilla, and the prepared flax egg. Whisk until smooth and thick.</li>
+      <li>Pour the wet mixture into the dry ingredients and mix with a spatula until the dough comes together. Fold in the chocolate chunks, seeds, and hemp seeds. If the dough is too sticky, refrigerate for 10–15 minutes to firm up.</li>
+      <li>Scoop 35–40g of dough (about 2–2½ Tbsp) per cookie onto the prepared pans, spacing about ½ inch apart — 12 per pan. They don't spread much.</li>
+      <li>Lightly flatten the top of each cookie with your hand. Bake for 18–20 minutes until the bottoms are lightly golden.</li>
+      <li>Rest on the pan for 5 minutes, then transfer to a cooling rack. Store in an airtight container on the counter for 5–7 days, or freeze for up to 3 months.</li>
+    </ol>
+
+  </div>
+
+  <footer>Bean Cooking · <a class="source-link" href="https://rainbowplantlife.com/healthy-vegan-breakfast-cookies/" target="_blank">Source</a></footer>
+
+</body>
+</html>

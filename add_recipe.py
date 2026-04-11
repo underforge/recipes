@@ -424,14 +424,20 @@ def add_card_to_index(d: dict) -> None:
 
     total_min = (prep or 0) + (cook or 0)
     time_str = f"{total_min} min" if total_min else ""
-    meta_parts = [p for p in [time_str, f"{servings} servings" if servings else ""] if p]
+    servings_str = str(servings)
+    if servings_str and not any(w in servings_str.lower() for w in ["serving", "cookie", "piece", "portion"]):
+        servings_str = f"{servings_str} servings"
+    meta_parts = [p for p in [time_str, servings_str] if p]
     meta_str = " · ".join(meta_parts)
 
     tag_html = f'\n          <span class="tag">{card_tag}</span>' if card_tag else ""
 
+    # Recipe page uses ../images/ but index.html is at root, so strip the ../
+    card_image_url = image_url.replace("../images/", "images/")
+
     card = f"""
       <a class="recipe-card" href="recipes/{slug}.html">
-        <img src="{image_url}" alt="{image_alt}" />
+        <img src="{card_image_url}" alt="{image_alt}" />
         <div class="recipe-card-body">
           <h2>{title}</h2>
           <p class="meta">{meta_str}</p>{tag_html}

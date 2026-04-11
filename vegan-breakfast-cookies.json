@@ -1,0 +1,63 @@
+{
+  "title": "Vegan Breakfast Cookies",
+  "slug": "vegan-breakfast-cookies",
+  "image_url": "../images/vegan-breakfast-cookies.jpg",
+  "image_alt": "Vegan breakfast cookies on a cooling rack",
+  "source_url": "https://rainbowplantlife.com/healthy-vegan-breakfast-cookies/",
+  "source_label": "Original recipe: Rainbow Plant Life",
+  "prep_min": 20,
+  "cook_min": 20,
+  "servings": "24 cookies",
+  "tags": "Vegan · GF option",
+  "card_tag": "Modified",
+  "modifications": [
+    "Used soy-free chocolate chunks in place of the dried fruit mix-in option"
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Flax Egg",
+      "items": [
+        {"amount": "2 Tbsp", "name": "ground flaxseed meal", "modified": false},
+        {"amount": "5 Tbsp", "name": "water", "modified": false}
+      ]
+    },
+    {
+      "label": "Dry Ingredients",
+      "items": [
+        {"amount": "2 cups (190g)", "name": "rolled oats (certified GF if needed)", "modified": false},
+        {"amount": "heaping ½ cup (50g)", "name": "unsweetened shredded coconut", "modified": false},
+        {"amount": "½ tsp", "name": "baking powder", "modified": false},
+        {"amount": "½ tsp", "name": "baking soda", "modified": false},
+        {"amount": "½–1 tsp", "name": "ground cinnamon (optional)", "modified": false},
+        {"amount": "½ tsp", "name": "fine sea salt", "modified": false}
+      ]
+    },
+    {
+      "label": "Wet Ingredients",
+      "items": [
+        {"amount": "¾ cup (190g)", "name": "smooth almond butter (or cashew butter)", "modified": false},
+        {"amount": "½ cup (160g)", "name": "pure maple syrup", "modified": false},
+        {"amount": "1½ tsp", "name": "pure vanilla extract", "modified": false}
+      ]
+    },
+    {
+      "label": "Mix-Ins",
+      "items": [
+        {"amount": "½ cup (~75g)", "name": "soy-free chocolate chunks ✱ replaces dried fruit", "modified": true},
+        {"amount": "½ cup (70g)", "name": "pepitas or sunflower seeds (or chopped nuts)", "modified": false},
+        {"amount": "⅓ cup (48g)", "name": "hemp seeds (hemp hearts)", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Make the flax egg: combine ground flaxseed meal with 5 Tbsp water. Stir and let sit for 10–15 minutes until gelled.",
+    "Arrange racks in the top and bottom thirds of the oven. Preheat to 350°F (175°C). Line two large sheet pans with parchment paper.",
+    "In a large bowl, mix together the dry ingredients: oats, coconut, baking powder, baking soda, salt, and cinnamon if using.",
+    "In a medium bowl, whisk together the wet ingredients: almond butter, maple syrup, vanilla, and the prepared flax egg. Whisk until smooth and thick.",
+    "Pour the wet mixture into the dry ingredients and mix with a spatula until the dough comes together. Fold in the chocolate chunks, seeds, and hemp seeds. If the dough is too sticky, refrigerate for 10–15 minutes to firm up.",
+    "Scoop 35–40g of dough (about 2–2½ Tbsp) per cookie onto the prepared pans, spacing about ½ inch apart — 12 per pan. They don't spread much.",
+    "Lightly flatten the top of each cookie with your hand. Bake for 18–20 minutes until the bottoms are lightly golden.",
+    "Rest on the pan for 5 minutes, then transfer to a cooling rack. Store in an airtight container on the counter for 5–7 days, or freeze for up to 3 months."
+  ],
+  "nutrition": null
+}
