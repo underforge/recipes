@@ -1,0 +1,47 @@
+{
+  "title": "Lentil, Mango & Avocado Salad",
+  "slug": "lentil-mango-avocado-salad",
+  "image_url": "../images/lentil-mango-avocado-salad.jpg",
+  "image_alt": "Lentil, mango and avocado salad with tahini dressing",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 15,
+  "cook_min": 0,
+  "servings": 2,
+  "tags": "Vegan · GF",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Salad",
+      "items": [
+        {"amount": "1 can", "name": "lentils, drained and rinsed", "modified": false},
+        {"amount": "1 medium", "name": "tomato, diced", "modified": false},
+        {"amount": "1", "name": "avocado, diced", "modified": false},
+        {"amount": "1", "name": "mango, diced", "modified": false},
+        {"amount": "3 inches", "name": "cucumber, diced", "modified": false},
+        {"amount": "1 small", "name": "shallot, thinly sliced (or 3 Tbsp onion, finely minced)", "modified": false},
+        {"amount": "a handful", "name": "fresh basil leaves, roughly chopped", "modified": false}
+      ]
+    },
+    {
+      "label": "Tahini Dressing",
+      "items": [
+        {"amount": "4 Tbsp", "name": "tahini", "modified": false},
+        {"amount": "4 Tbsp", "name": "olive oil", "modified": false},
+        {"amount": "4 Tbsp", "name": "fresh lemon juice", "modified": false},
+        {"amount": "2 Tbsp", "name": "maple syrup", "modified": false},
+        {"amount": "½ clove", "name": "garlic, minced", "modified": false},
+        {"amount": "", "name": "salt, to taste", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Drain and rinse the lentils. Pat dry if they seem wet.",
+    "Dice the mango, avocado, tomato, and cucumber into similar-sized chunks. Thinly slice the shallot (or finely mince the onion). Roughly chop the basil.",
+    "Whisk together all dressing ingredients until smooth. Taste and adjust salt or lemon as needed — the dressing amounts are a starting point, adjust to your preference.",
+    "Combine all salad ingredients in a large bowl. Pour the dressing over and toss gently to coat.",
+    "Serve immediately — the avocado will start to brown if it sits too long."
+  ],
+  "nutrition": null
+}
