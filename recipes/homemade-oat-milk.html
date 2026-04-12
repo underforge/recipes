@@ -345,6 +345,20 @@
 
   <script>
     (function () {
+      // Wake Lock — keep screen awake while viewing a recipe
+      var wakeLock = null;
+      function requestWakeLock() {
+        if ('wakeLock' in navigator) {
+          navigator.wakeLock.request('screen').then(function (lock) {
+            wakeLock = lock;
+          }).catch(function () {});
+        }
+      }
+      requestWakeLock();
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') requestWakeLock();
+      });
+
       // Font size — scale html element so all rem and em units resize together
       var htmlEl = document.documentElement;
       var fs = parseFloat(localStorage.getItem('recipeFont') || '1');

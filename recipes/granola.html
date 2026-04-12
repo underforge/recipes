@@ -343,7 +343,6 @@
       <li class="modified"><span class="amount" data-amount="1 cup">1 cup</span><span>hemp hearts ✱ added</span></li>
       <li class="modified"><span class="amount" data-amount="⅙ cup">⅙ cup</span><span>chia seeds ✱ added</span></li>
       <li class="ingredient-group-label"><span>Add After Baking</span></li>
-      <li><span class="amount" data-amount="¾ cup">¾ cup</span><span>pecans</span></li>
       <li><span class="amount" data-amount="¾ cup">¾ cup</span><span>dried fruit</span></li>
       <li><span class="amount" data-amount="to taste">to taste</span><span>chopped chocolate (optional, add once fully cooled)</span></li>
     </ul>
@@ -354,7 +353,7 @@
       <li>Melt butter and honey together in a large saucepan over low heat. Whisk in the cinnamon.</li>
       <li>Stir in oats, sunflower seeds, pecans, ground flax, hemp hearts, and chia seeds until everything is evenly coated.</li>
       <li>Spread mixture in an even layer on the prepared pan. Bake for 15–20 minutes until golden, keeping an eye on it as ovens vary.</li>
-      <li>Remove from oven and immediately sprinkle pecans and dried fruit over the top. Let cool completely on the pan — it will crisp up as it cools. Once fully cooled, mix in chopped chocolate if using. Break into clusters and store in an airtight container.</li>
+      <li>Remove from oven and immediately sprinkle dried fruit over the top. Let cool completely on the pan — it will crisp up as it cools. Once fully cooled, mix in chopped chocolate if using. Break into clusters and store in an airtight container.</li>
     </ol>
 
   </div>
@@ -363,6 +362,20 @@
 
   <script>
     (function () {
+      // Wake Lock — keep screen awake while viewing a recipe
+      var wakeLock = null;
+      function requestWakeLock() {
+        if ('wakeLock' in navigator) {
+          navigator.wakeLock.request('screen').then(function (lock) {
+            wakeLock = lock;
+          }).catch(function () {});
+        }
+      }
+      requestWakeLock();
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') requestWakeLock();
+      });
+
       // Font size — scale html element so all rem and em units resize together
       var htmlEl = document.documentElement;
       var fs = parseFloat(localStorage.getItem('recipeFont') || '1');

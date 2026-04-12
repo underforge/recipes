@@ -40,7 +40,6 @@
     {
       "label": "Add After Baking",
       "items": [
-        {"amount": "¾ cup", "name": "pecans", "modified": false},
         {"amount": "¾ cup", "name": "dried fruit", "modified": false},
         {"amount": "to taste", "name": "chopped chocolate (optional, add once fully cooled)", "modified": false}
       ]
@@ -51,7 +50,7 @@
     "Melt butter and honey together in a large saucepan over low heat. Whisk in the cinnamon.",
     "Stir in oats, sunflower seeds, pecans, ground flax, hemp hearts, and chia seeds until everything is evenly coated.",
     "Spread mixture in an even layer on the prepared pan. Bake for 15–20 minutes until golden, keeping an eye on it as ovens vary.",
-    "Remove from oven and immediately sprinkle pecans and dried fruit over the top. Let cool completely on the pan — it will crisp up as it cools. Once fully cooled, mix in chopped chocolate if using. Break into clusters and store in an airtight container."
+    "Remove from oven and immediately sprinkle dried fruit over the top. Let cool completely on the pan — it will crisp up as it cools. Once fully cooled, mix in chopped chocolate if using. Break into clusters and store in an airtight container."
   ],
   "nutrition": null
 }
