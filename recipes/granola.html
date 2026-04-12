@@ -355,13 +355,13 @@
       htmlEl.style.fontSize = fs + 'em';
 
       document.getElementById('font-down').addEventListener('click', function () {
-        fs = Math.max(0.5, parseFloat((fs - 5.0).toFixed(1)));
+        fs = Math.max(0.5, parseFloat((fs - 0.5).toFixed(1)));
         htmlEl.style.fontSize = fs + 'em';
         localStorage.setItem('recipeFont', fs);
       });
 
       document.getElementById('font-up').addEventListener('click', function () {
-        fs = Math.min(20.0, parseFloat((fs + 5.0).toFixed(1)));
+        fs = Math.min(20.0, parseFloat((fs + 0.5).toFixed(1)));
         htmlEl.style.fontSize = fs + 'em';
         localStorage.setItem('recipeFont', fs);
       });
