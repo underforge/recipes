@@ -303,7 +303,6 @@
       <button class="ctrl-btn" id="font-down">A−</button>
       <button class="ctrl-btn" id="font-up">A+</button>
       <span class="ctrl-sep">·</span>
-      <span class="ctrl-label">Serves</span>
       <button class="ctrl-btn scale-btn" data-scale="0.5">½×</button>
       <button class="ctrl-btn scale-btn active" data-scale="1">1×</button>
       <button class="ctrl-btn scale-btn" data-scale="2">2×</button>
@@ -368,20 +367,20 @@
 
   <script>
     (function () {
-      // Font size
-      var content = document.querySelector('.content');
+      // Font size — scale html element so all rem and em units resize together
+      var htmlEl = document.documentElement;
       var fs = parseFloat(localStorage.getItem('recipeFont') || '1');
-      content.style.fontSize = fs + 'em';
+      htmlEl.style.fontSize = fs + 'em';
 
       document.getElementById('font-down').addEventListener('click', function () {
         fs = Math.max(0.5, parseFloat((fs - 5.0).toFixed(1)));
-        content.style.fontSize = fs + 'em';
+        htmlEl.style.fontSize = fs + 'em';
         localStorage.setItem('recipeFont', fs);
       });
 
       document.getElementById('font-up').addEventListener('click', function () {
         fs = Math.min(20.0, parseFloat((fs + 5.0).toFixed(1)));
-        content.style.fontSize = fs + 'em';
+        htmlEl.style.fontSize = fs + 'em';
         localStorage.setItem('recipeFont', fs);
       });
 
