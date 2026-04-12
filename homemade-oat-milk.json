@@ -1,0 +1,37 @@
+{
+  "title": "Homemade Oat Milk",
+  "slug": "homemade-oat-milk",
+  "image_url": "https://kirstieannewellbeing.co.uk/wp-content/uploads/2020/02/homemade-oat-milk-pinterest-pin.png",
+  "image_alt": "Homemade oat milk in a bottle",
+  "source_url": "https://kirstieannewellbeing.co.uk/2020/02/05/homemade-oat-milk-df-gf-vegan/",
+  "source_label": "Original recipe: Kirstie Anne Wellbeing",
+  "prep_min": 5,
+  "cook_min": 0,
+  "servings": "1 litre",
+  "tags": "Vegan · GF · DF",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "",
+      "items": [
+        {"amount": "1 litre", "name": "cold water", "modified": false},
+        {"amount": "2 cups", "name": "oats (certified GF if needed)", "modified": false},
+        {"amount": "1 Tbsp", "name": "rapeseed oil (or ⅓ cup cashews or macadamia nuts)", "modified": false},
+        {"amount": "½ tsp", "name": "xanthan gum", "modified": false},
+        {"amount": "1 tsp", "name": "calcium carbonate powder (optional)", "modified": false},
+        {"amount": "pinch", "name": "salt", "modified": false},
+        {"amount": "to taste", "name": "agave syrup or sweetener (optional)", "modified": false},
+        {"amount": "few drops", "name": "vanilla essence (optional)", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Combine all ingredients in a blender.",
+    "Blend for 30–40 seconds.",
+    "Strain through a nut milk bag into a large bowl or jug.",
+    "Pour into sterilised bottles or containers. Refrigerate and use within 3–5 days. Shake well before each use.",
+    "Note: the xanthan gum helps prevent separation in hot drinks like coffee."
+  ],
+  "nutrition": null
+}
