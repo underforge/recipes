@@ -9,8 +9,12 @@
   "cook_min": 20,
   "servings": 10,
   "tags": "Vegetarian · GF option",
-  "card_tag": "Original",
-  "modifications": [],
+  "card_tag": "Modified",
+  "modifications": [
+    "Omitted shredded coconut",
+    "Reduced sunflower seeds to ⅔ of original (1⅓ cups instead of 2)",
+    "Substituted pecans for almonds"
+  ],
   "ingredient_groups": [
     {
       "label": "Wet",
@@ -24,9 +28,8 @@
       "label": "Dry",
       "items": [
         {"amount": "4 cups", "name": "oats", "modified": false},
-        {"amount": "2 cups", "name": "shredded coconut", "modified": false},
-        {"amount": "2 cups", "name": "sunflower seeds", "modified": false},
-        {"amount": "1 cup", "name": "almonds", "modified": false},
+        {"amount": "1⅓ cups", "name": "sunflower seeds ✱ reduced from 2 cups", "modified": true},
+        {"amount": "1 cup", "name": "pecans ✱ replaces almonds", "modified": true},
         {"amount": "¼ cup", "name": "ground flax", "modified": false}
       ]
     },
@@ -41,7 +44,7 @@
   "steps": [
     "Preheat oven to 325°F (165°C). Line a large rimmed baking sheet with parchment paper.",
     "Melt butter and honey together in a large saucepan over low heat. Whisk in the cinnamon.",
-    "Stir in oats, coconut, sunflower seeds, almonds, and ground flax until everything is evenly coated.",
+    "Stir in oats, sunflower seeds, pecans, and ground flax until everything is evenly coated.",
     "Spread mixture in an even layer on the prepared pan. Bake for 15–20 minutes until golden, keeping an eye on it as ovens vary.",
     "Remove from oven and immediately sprinkle walnuts or pecans and dried fruit over the top. Let cool completely on the pan — it will crisp up as it cools. Break into clusters and store in an airtight container."
   ],
