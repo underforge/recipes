@@ -378,13 +378,13 @@
       content.style.fontSize = fs + 'em';
 
       document.getElementById('font-down').addEventListener('click', function () {
-        fs = Math.max(0.7, parseFloat((fs - 0.2).toFixed(1)));
+        fs = Math.max(0.6, parseFloat((fs - 0.4).toFixed(1)));
         content.style.fontSize = fs + 'em';
         localStorage.setItem('recipeFont', fs);
       });
 
       document.getElementById('font-up').addEventListener('click', function () {
-        fs = Math.min(1.7, parseFloat((fs + 0.2).toFixed(1)));
+        fs = Math.min(2.0, parseFloat((fs + 0.4).toFixed(1)));
         content.style.fontSize = fs + 'em';
         localStorage.setItem('recipeFont', fs);
       });
