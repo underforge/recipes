@@ -1,0 +1,76 @@
+{
+  "title": "Baked Zucchini Chickpea Curry",
+  "slug": "baked-zucchini-chickpea-curry",
+  "image_url": "https://www.veganricha.com/wp-content/uploads/2024/10/Baked-Chickpea-Zucchini-Curry-3617.jpg",
+  "image_alt": "Baked Zucchini Chickpea Curry in a bowl with rice",
+  "source_url": "https://www.veganricha.com/baked-zucchini-chickpea-curry/",
+  "source_label": "Original recipe: Vegan Richa",
+  "prep_min": 15,
+  "cook_min": 30,
+  "servings": 4,
+  "tags": "Vegan · GF · Soy-free",
+  "card_tag": "Modified",
+  "modifications": [
+    "Omitted hot sauce and sambal oelek — substituted Sweet Chili Sauce instead",
+    "Added broccoli and cauliflower in similar quantities to the zucchini",
+    "Used garlic powder instead of fresh garlic / ginger garlic paste"
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Vegetables",
+      "items": [
+        {"amount": "2 tsp", "name": "oil (for greasing)", "modified": false},
+        {"amount": "1 cup", "name": "onion, chopped", "modified": false},
+        {"amount": "1 medium", "name": "zucchini, sliced ¼\" or cubed", "modified": false},
+        {"amount": "similar qty", "name": "broccoli florets ✱ added", "modified": true},
+        {"amount": "similar qty", "name": "cauliflower florets ✱ added", "modified": true}
+      ]
+    },
+    {
+      "label": "Heat / Sauce",
+      "items": [
+        {"amount": "to taste", "name": "Sweet Chili Sauce ✱ replaces hot sauce + sambal oelek", "modified": true}
+      ]
+    },
+    {
+      "label": "Spices",
+      "items": [
+        {"amount": "2 tsp", "name": "ground coriander", "modified": false},
+        {"amount": "1 tsp", "name": "ground cumin", "modified": false},
+        {"amount": "1–2 tsp", "name": "garam masala", "modified": false},
+        {"amount": "¼ tsp", "name": "salt", "modified": false}
+      ]
+    },
+    {
+      "label": "Curry Base",
+      "items": [
+        {"amount": "to taste", "name": "garlic powder ✱ replaces ginger garlic paste", "modified": true},
+        {"amount": "8 oz", "name": "canned tomato puree (or 2 Tbsp tomato paste)", "modified": false},
+        {"amount": "15 oz", "name": "full-fat coconut milk", "modified": false},
+        {"amount": "½ tsp", "name": "salt", "modified": false},
+        {"amount": "15 oz can", "name": "chickpeas, drained", "modified": false},
+        {"amount": "½ cup", "name": "frozen spinach (or more, to taste)", "modified": false}
+      ]
+    },
+    {
+      "label": "Garnish",
+      "items": [
+        {"amount": "", "name": "cilantro and lime juice", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 400°F (205°C). Grease a 9×12\" baking dish with oil. Add onion, zucchini, broccoli, cauliflower, and sweet chili sauce, tossing well.",
+    "Mix all spices in a small bowl and sprinkle over the veggie mixture. Spread evenly in the pan. Bake for 10–14 minutes until onions are translucent.",
+    "Remove from oven. Mix in garlic powder and tomato puree. Add coconut milk, chickpeas, and spinach. Stir well and spread evenly.",
+    "Return to oven and bake 20–30 minutes, until sauce is bubbling and slightly thickened. If you need it thicker, stir in a few tablespoons of non-dairy yogurt while still hot.",
+    "Garnish with cilantro and lime juice. Serve with rice, naan, flatbread, or garlic bread."
+  ],
+  "nutrition": {
+    "Calories": "284",
+    "Carbs": "44g",
+    "Protein": "12g",
+    "Fat": "7g",
+    "Fiber": "11g"
+  }
+}

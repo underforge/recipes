@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-add_recipe.py — Add a new recipe to Aaron's Recipes site.
+add_recipe.py — Add a new recipe to Bean Cooking.
 
 Usage:
-    python add_recipe.py recipe_data.json
+    python add_recipe.py recipe_data.json          # add new recipe
+    python add_recipe.py recipe_data.json --force  # regenerate existing page (index unchanged)
 
 The JSON file should have this structure (see recipe_template.json for a full example):
 {
@@ -115,7 +116,7 @@ def render_recipe_page(d: dict) -> str:
             name = item.get("name", "")
             mod = item.get("modified", False)
             cls = ' class="modified"' if mod else ""
-            ingredients_html += f'      <li{cls}><span class="amount">{amount}</span><span>{name}</span></li>\n'
+            ingredients_html += f'      <li{cls}><span class="amount" data-amount="{amount}">{amount}</span><span>{name}</span></li>\n'
 
     # Steps
     steps_html = "".join(
@@ -203,6 +204,55 @@ def render_recipe_page(d: dict) -> str:
       max-width: 720px;
       margin: 0 auto;
       padding: 2.5rem 2rem 4rem;
+    }}
+
+    .controls {{
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }}
+
+    .ctrl-label {{
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 0.1rem;
+    }}
+
+    .ctrl-sep {{
+      color: var(--border);
+      margin: 0 0.5rem;
+      user-select: none;
+    }}
+
+    .ctrl-btn {{
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.2em 0.6em;
+      color: var(--muted);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+      line-height: 1.4;
+    }}
+
+    .ctrl-btn:hover {{
+      border-color: var(--accent);
+      color: var(--accent);
+    }}
+
+    .ctrl-btn.active {{
+      border-color: var(--accent);
+      color: var(--accent);
     }}
 
     h1 {{
@@ -391,6 +441,17 @@ def render_recipe_page(d: dict) -> str:
 
   <div class="content">
 
+    <div class="controls">
+      <span class="ctrl-label">Text</span>
+      <button class="ctrl-btn" id="font-down">A−</button>
+      <button class="ctrl-btn" id="font-up">A+</button>
+      <span class="ctrl-sep">·</span>
+      <span class="ctrl-label">Serves</span>
+      <button class="ctrl-btn scale-btn" data-scale="0.5">½×</button>
+      <button class="ctrl-btn scale-btn active" data-scale="1">1×</button>
+      <button class="ctrl-btn scale-btn" data-scale="2">2×</button>
+    </div>
+
     <h1>{title}</h1>
 
     <div class="meta-row">
@@ -407,6 +468,77 @@ def render_recipe_page(d: dict) -> str:
   </div>
 
   <footer>Bean Cooking{footer_source}</footer>
+
+  <script>
+    (function () {{
+      // Font size
+      var content = document.querySelector('.content');
+      var fs = parseFloat(localStorage.getItem('recipeFont') || '1');
+      content.style.fontSize = fs + 'em';
+
+      document.getElementById('font-down').addEventListener('click', function () {{
+        fs = Math.max(0.8, parseFloat((fs - 0.1).toFixed(1)));
+        content.style.fontSize = fs + 'em';
+        localStorage.setItem('recipeFont', fs);
+      }});
+
+      document.getElementById('font-up').addEventListener('click', function () {{
+        fs = Math.min(1.5, parseFloat((fs + 0.1).toFixed(1)));
+        content.style.fontSize = fs + 'em';
+        localStorage.setItem('recipeFont', fs);
+      }});
+
+      // Portion scaling
+      var FRACS = {{'½':0.5,'¼':0.25,'¾':0.75,'⅓':1/3,'⅔':2/3,'⅛':0.125,'⅜':0.375,'⅝':0.625,'⅞':0.875}};
+
+      function parse(s) {{
+        s = s.trim();
+        var m = s.match(/^(\d+)\s*([½¼¾⅓⅔⅛⅜⅝⅞])/);
+        if (m) return parseInt(m[1]) + FRACS[m[2]];
+        if (FRACS[s]) return FRACS[s];
+        m = s.match(/^(\d+\.?\d*)/);
+        if (m) return parseFloat(m[1]);
+        return null;
+      }}
+
+      function fmt(n) {{
+        if (n <= 0) return '0';
+        var nice = [[1/8,'⅛'],[1/4,'¼'],[1/3,'⅓'],[3/8,'⅜'],[1/2,'½'],[5/8,'⅝'],[2/3,'⅔'],[3/4,'¾'],[7/8,'⅞']];
+        var whole = Math.floor(n), frac = n - whole;
+        if (frac < 0.04) return String(whole);
+        for (var i = 0; i < nice.length; i++) {{
+          if (Math.abs(frac - nice[i][0]) < 0.05) return (whole > 0 ? whole : '') + nice[i][1];
+        }}
+        return n.toFixed(1);
+      }}
+
+      function scaleAmt(orig, factor) {{
+        if (!orig.trim()) return orig;
+        // Handle ranges like "½–1" or "1-2"
+        var rm = orig.match(/^(.+?)\s*[–\-]\s*(\S+)(.*)/);
+        if (rm) {{
+          var a = parse(rm[1]), b = parse(rm[2]);
+          if (a !== null && b !== null) return fmt(a * factor) + '–' + fmt(b * factor) + rm[3];
+        }}
+        var m = orig.match(/^(\d+\s*[½¼¾⅓⅔⅛⅜⅝⅞]|[½¼¾⅓⅔⅛⅜⅝⅞]|\d+\.?\d*)/);
+        if (!m) return orig;
+        var num = parse(m[1]);
+        if (num === null) return orig;
+        return fmt(num * factor) + orig.slice(m[1].length);
+      }}
+
+      document.querySelectorAll('.scale-btn').forEach(function (btn) {{
+        btn.addEventListener('click', function () {{
+          document.querySelectorAll('.scale-btn').forEach(function (b) {{ b.classList.remove('active'); }});
+          btn.classList.add('active');
+          var factor = parseFloat(btn.dataset.scale);
+          document.querySelectorAll('.amount[data-amount]').forEach(function (el) {{
+            el.textContent = scaleAmt(el.dataset.amount, factor);
+          }});
+        }});
+      }});
+    }})();
+  </script>
 
 </body>
 </html>"""
@@ -454,11 +586,14 @@ def add_card_to_index(d: dict) -> None:
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python add_recipe.py <recipe_data.json>")
+    force = "--force" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+
+    if len(args) != 1:
+        print("Usage: python add_recipe.py <recipe_data.json> [--force]")
         sys.exit(1)
 
-    data_file = Path(sys.argv[1])
+    data_file = Path(args[0])
     if not data_file.exists():
         print(f"File not found: {data_file}")
         sys.exit(1)
@@ -468,16 +603,20 @@ def main():
     d["slug"] = slug
 
     out_path = RECIPES_DIR / f"{slug}.html"
-    if out_path.exists():
+    if out_path.exists() and not force:
         print(f"Recipe file already exists: {out_path}")
+        print("Use --force to regenerate it (index will not be updated).")
         sys.exit(1)
 
     html = render_recipe_page(d)
     out_path.write_text(html)
-    print(f"Created: {out_path}")
+    print(f"{'Regenerated' if force else 'Created'}: {out_path}")
 
-    add_card_to_index(d)
-    print(f"Updated: {INDEX}")
+    if not force:
+        add_card_to_index(d)
+        print(f"Updated: {INDEX}")
+    else:
+        print("(index unchanged — use without --force to add a new card)")
 
 
 if __name__ == "__main__":
