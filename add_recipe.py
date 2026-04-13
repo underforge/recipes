@@ -123,6 +123,21 @@ def render_recipe_page(d: dict) -> str:
         f"      <li>{step}</li>\n" for step in d.get("steps", [])
     )
 
+    # Variations
+    variations_html = ""
+    if d.get("variations"):
+        variations_html = "\n    <h2>Variations</h2>\n"
+        for v in d.get("variations", []):
+            vtitle = v.get("title", "Variation")
+            vitems = "".join(f"        <li>{i}</li>\n" for i in v.get("items", []))
+            variations_html += f"""
+    <div class="variation-box">
+      <h3 class="variation-title">{vtitle}</h3>
+      <ul>
+{vitems}      </ul>
+    </div>
+"""
+
     # Nutrition
     nutrition_html = ""
     nutrition = d.get("nutrition")
@@ -410,6 +425,43 @@ def render_recipe_page(d: dict) -> str:
       letter-spacing: 0.05em;
     }}
 
+    .variation-box {{
+      background: #f7f9fb;
+      border-left: 3px solid #6b9ab8;
+      padding: 1rem 1.2rem;
+      margin-top: 1.5rem;
+      border-radius: 0 4px 4px 0;
+    }}
+
+    .variation-title {{
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b9ab8;
+      margin-bottom: 0.5rem;
+    }}
+
+    .variation-box ul {{
+      list-style: none;
+      padding: 0;
+    }}
+
+    .variation-box ul li {{
+      font-size: 0.9rem;
+      color: var(--ink);
+      padding: 0.2rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }}
+
+    .variation-box ul li::before {{
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #6b9ab8;
+    }}
+
     footer {{
       text-align: center;
       padding: 2rem;
@@ -463,7 +515,7 @@ def render_recipe_page(d: dict) -> str:
     <h2>Instructions</h2>
     <ol class="steps">
 {steps_html}    </ol>
-{nutrition_html}
+{nutrition_html}{variations_html}
   </div>
 
   <footer>Bean Cooking{footer_source}</footer>
