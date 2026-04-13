@@ -1,0 +1,54 @@
+{
+  "title": "Montreal Bagels",
+  "slug": "montreal-bagels",
+  "image_url": "images/montreal-bagels.jpg",
+  "image_alt": "Golden Montreal bagels covered in sesame and poppy seeds",
+  "source_url": "https://www.cbc.ca/life/greatcanadianbakingshow/recipe-montreal-bagels-1.5051491",
+  "source_label": "Original recipe: CBC / The Great Canadian Baking Show",
+  "prep_min": 90,
+  "cook_min": 30,
+  "servings": "16 bagels",
+  "tags": "Vegan option · DF",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Dough",
+      "items": [
+        {"amount": "350g", "name": "warm water", "modified": false},
+        {"amount": "60g", "name": "sugar", "modified": false},
+        {"amount": "30g", "name": "oil", "modified": false},
+        {"amount": "10g", "name": "active dry yeast", "modified": false},
+        {"amount": "1", "name": "egg", "modified": false},
+        {"amount": "20g", "name": "honey", "modified": false},
+        {"amount": "8g", "name": "salt", "modified": false},
+        {"amount": "up to 700g", "name": "flour (start with ~550g)", "modified": false}
+      ]
+    },
+    {
+      "label": "Honey Water",
+      "items": [
+        {"amount": "350g", "name": "honey", "modified": false}
+      ]
+    },
+    {
+      "label": "Topping",
+      "items": [
+        {"amount": "generously", "name": "sesame seeds", "modified": false},
+        {"amount": "generously", "name": "poppy seeds", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 450°F (230°C) with a parchment-lined baking sheet inside — it needs to be hot when the bagels go in. Fill a large pot with water and bring to a boil over medium-high heat.",
+    "In a large bowl, whisk together the warm water, sugar, oil, yeast, egg, and honey. Whisk in the salt. Gradually stir in flour (start with ~550g), one cup at a time, until a soft dough forms.",
+    "Turn dough onto a surface and knead until it comes together, adding flour as needed to prevent sticking. Knead for 10–12 minutes until the dough is soft and springs back when you press it.",
+    "Place dough in a lightly oiled bowl, turning to coat. Cover with a towel and rest for 30 minutes.",
+    "Cut dough into 16 pieces (about 75g each). Keep pieces covered with a towel while you work.",
+    "Roll each piece into a 10–12 inch rope — avoid adding flour unless necessary to prevent sticking. Wrap the rope around your four fingers, overlapping the ends on your palm to form a circle. Seal by rolling your hand back and forth with gentle pressure. Place on a floured surface and cover. Repeat with remaining pieces.",
+    "Let shaped bagels rest for 30 minutes.",
+    "Add the 350g honey to the pot of boiling water and bring back to a full boil. Gently lower bagels in batches and boil for 1½–2 minutes per side. Remove with a slotted spoon, place on a rack, and sprinkle heavily with sesame and poppy seeds while still wet.",
+    "Place seeded bagels on the preheated pan in the oven. Bake for 15–20 minutes until deep golden brown."
+  ],
+  "nutrition": null
+}
