@@ -20,7 +20,7 @@
         {"amount": "30g", "name": "oil", "modified": false},
         {"amount": "10g", "name": "active dry yeast", "modified": false},
         {"amount": "1", "name": "egg", "modified": false},
-        {"amount": "20g", "name": "honey", "modified": false},
+        {"amount": "20g", "name": "honey or syrup (optional)", "modified": false},
         {"amount": "8g", "name": "salt", "modified": false},
         {"amount": "up to 700g", "name": "flour (start with ~550g)", "modified": false}
       ]
@@ -28,7 +28,7 @@
     {
       "label": "Honey Water",
       "items": [
-        {"amount": "350g", "name": "honey", "modified": false}
+        {"amount": "350g", "name": "honey or syrup (optional)", "modified": false}
       ]
     },
     {
@@ -47,7 +47,7 @@
     "Cut dough into 16 pieces (about 75g each). Keep pieces covered with a towel while you work.",
     "Roll each piece into a 10–12 inch rope — avoid adding flour unless necessary to prevent sticking. Wrap the rope around your four fingers, overlapping the ends on your palm to form a circle. Seal by rolling your hand back and forth with gentle pressure. Place on a floured surface and cover. Repeat with remaining pieces.",
     "Let shaped bagels rest for 30 minutes.",
-    "Add the 350g honey to the pot of boiling water and bring back to a full boil. Gently lower bagels in batches and boil for 1½–2 minutes per side. Remove with a slotted spoon, place on a rack, and sprinkle heavily with sesame and poppy seeds while still wet.",
+    "Add the 350g honey or syrup (if using) to the pot of boiling water and bring back to a full boil. Gently lower bagels in batches and boil for 1½–2 minutes per side. Remove with a slotted spoon, place on a rack, and sprinkle heavily with sesame and poppy seeds while still wet.",
     "Place seeded bagels on the preheated pan in the oven. Bake for 15–20 minutes until deep golden brown."
   ],
   "nutrition": null
