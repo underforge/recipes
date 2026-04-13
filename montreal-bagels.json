@@ -17,6 +17,7 @@
       "items": [
         {"amount": "350g", "name": "warm water", "modified": false},
         {"amount": "60g", "name": "sugar", "modified": false},
+        {"amount": "1 Tbsp", "name": "brown sugar (optional)", "modified": false},
         {"amount": "30g", "name": "oil", "modified": false},
         {"amount": "10g", "name": "active dry yeast", "modified": false},
         {"amount": "1", "name": "egg", "modified": false},
