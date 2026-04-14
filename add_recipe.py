@@ -622,19 +622,21 @@ def add_card_to_index(d: dict) -> None:
     total_min = (prep or 0) + (cook or 0)
     time_str = f"{total_min} min" if total_min else ""
     servings_str = str(servings)
-    if servings_str and not any(w in servings_str.lower() for w in ["serving", "cookie", "piece", "portion", "litre", "liter", "ml", "oz", "cup", "lb", "bagel"]):
+    if servings_str and not any(w in servings_str.lower() for w in ["serving", "cookie", "piece", "portion", "litre", "liter", "ml", "oz", "cup", "lb", "bagel", "pizza"]):
         servings_str = f"{servings_str} servings"
     meta_parts = [p for p in [time_str, servings_str] if p]
     meta_str = " · ".join(meta_parts)
 
     tag_html = f'\n          <span class="tag">{card_tag}</span>' if card_tag else ""
+    recipe_type = d.get("type", "")
+    type_attr = f' data-type="{recipe_type}"' if recipe_type else ""
 
     # Local images live in recipes/images/. Recipe pages (in recipes/) use
     # "images/filename.jpg"; index.html (at root) needs "recipes/images/filename.jpg"
     card_image_url = image_url.replace("images/", "recipes/images/") if not image_url.startswith("http") else image_url
 
     card = f"""
-      <a class="recipe-card" href="recipes/{slug}.html">
+      <a class="recipe-card"{type_attr} href="recipes/{slug}.html">
         <img src="{card_image_url}" alt="{image_alt}" />
         <div class="recipe-card-body">
           <h2>{title}</h2>
