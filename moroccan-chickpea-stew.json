@@ -12,7 +12,9 @@
   "card_tag": "Modified",
   "modifications": [
     "Omitted Ras El Hanout — skipped entirely rather than substituting",
-    "Omitted Harissa — left out the heat"
+    "Omitted Harissa — left out the heat",
+    "Added ½ cup chopped dates, half a small cauliflower, and 1½ cups seitan",
+    "Spinach and kale are interchangeable"
   ],
   "ingredient_groups": [
     {
@@ -22,7 +24,9 @@
         {"amount": "1 medium", "name": "onion, diced", "modified": false},
         {"amount": "4 cloves", "name": "garlic, minced", "modified": false},
         {"amount": "30 oz", "name": "chickpeas, drained", "modified": false},
-        {"amount": "2 cups (330g)", "name": "sweet potatoes, cubed", "modified": false}
+        {"amount": "2 cups (330g)", "name": "sweet potatoes, cubed", "modified": false},
+        {"amount": "½ small", "name": "cauliflower, cut into florets ✱ added", "modified": true},
+        {"amount": "1½ cups", "name": "seitan, roughly chopped ✱ added", "modified": true}
       ]
     },
     {
@@ -37,13 +41,14 @@
       "items": [
         {"amount": "2 Tbsp", "name": "tomato paste", "modified": false},
         {"amount": "28 oz", "name": "crushed tomatoes", "modified": false},
-        {"amount": "1 cup", "name": "vegetable broth", "modified": false}
+        {"amount": "1 cup", "name": "vegetable broth", "modified": false},
+        {"amount": "½ cup", "name": "dates, pitted and chopped ✱ added", "modified": true}
       ]
     },
     {
       "label": "Finish",
       "items": [
-        {"amount": "5 oz", "name": "baby spinach, roughly chopped", "modified": false},
+        {"amount": "5 oz", "name": "baby spinach or kale, roughly chopped ✱ interchangeable", "modified": true},
         {"amount": "2 Tbsp", "name": "fresh parsley, chopped (garnish)", "modified": false}
       ]
     },
@@ -55,10 +60,11 @@
     }
   ],
   "steps": [
-    "Heat oil in a large pot over medium heat. Sauté onions for 3–5 minutes until translucent. Add chickpeas and sweet potatoes; cook another 5–8 minutes.",
+    "Heat oil in a large pot over medium heat. Sauté onions for 3–5 minutes until translucent. Add chickpeas, sweet potatoes, and cauliflower; cook another 5–8 minutes.",
     "Add paprika, tomato paste, and garlic. Mix and cook 2–3 minutes until fragrant.",
-    "Add crushed tomatoes and broth. Lower heat to medium-low and simmer covered for 35–40 minutes until sweet potatoes are soft, stirring occasionally.",
-    "Add spinach and cook until wilted. Adjust seasoning with salt and pepper.",
+    "Add crushed tomatoes, broth, and dates. Lower heat to medium-low and simmer covered for 20–25 minutes, stirring occasionally.",
+    "Add seitan and continue simmering covered for another 10–15 minutes until the sweet potatoes and cauliflower are tender.",
+    "Add spinach (or kale) and cook until wilted. Adjust seasoning with salt and pepper.",
     "Serve warm over couscous and garnish with parsley."
   ],
   "nutrition": null
