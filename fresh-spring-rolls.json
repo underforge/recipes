@@ -1,0 +1,55 @@
+{
+  "title": "Fresh Spring Rolls with Peanut Sauce",
+  "slug": "fresh-spring-rolls",
+  "type": "dinner",
+  "image_url": "images/fresh-spring-rolls.jpg",
+  "image_alt": "Fresh spring rolls with colourful fillings served with peanut dipping sauce",
+  "source_url": "https://www.loveandlemons.com/fresh-spring-rolls/",
+  "source_label": "Original recipe: Love and Lemons",
+  "prep_min": 35,
+  "cook_min": 0,
+  "servings": "2–4",
+  "tags": "Vegan · GF · Soy-free",
+  "card_tag": "Modified",
+  "modifications": [
+    "Fake Soy Sauce in place of tamari/soy sauce in the peanut sauce"
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Peanut Sauce",
+      "items": [
+        {"amount": "½ cup", "name": "creamy natural peanut butter", "modified": false},
+        {"amount": "2 Tbsp", "name": "fresh lime juice", "modified": false},
+        {"amount": "2 Tbsp", "name": "rice vinegar", "modified": false},
+        {"amount": "1 Tbsp", "name": "sriracha", "modified": false},
+        {"amount": "1 Tbsp", "name": "Fake Soy Sauce ✱ replaces tamari/soy sauce", "modified": true},
+        {"amount": "1 Tbsp", "name": "toasted sesame oil", "modified": false},
+        {"amount": "2 tsp", "name": "maple syrup", "modified": false},
+        {"amount": "1 tsp", "name": "fresh ginger, grated", "modified": false},
+        {"amount": "4–6 Tbsp", "name": "water, as needed", "modified": false}
+      ]
+    },
+    {
+      "label": "Spring Rolls",
+      "items": [
+        {"amount": "4 oz", "name": "vermicelli rice noodles", "modified": false},
+        {"amount": "8 large", "name": "rice paper wrappers", "modified": false},
+        {"amount": "1", "name": "carrot, julienned", "modified": false},
+        {"amount": "½", "name": "English cucumber, julienned", "modified": false},
+        {"amount": "1", "name": "jalapeño, seeded and cut into strips", "modified": false},
+        {"amount": "1", "name": "mango, peeled and cut into strips", "modified": false},
+        {"amount": "1", "name": "avocado, cut into strips", "modified": false},
+        {"amount": "handful", "name": "fresh basil, mint, and cilantro leaves", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Make the peanut sauce: whisk together the peanut butter, lime juice, rice vinegar, sriracha, Fake Soy Sauce, sesame oil, maple syrup, ginger, and 4 Tbsp water until smooth. Add more water 1 Tbsp at a time until you reach your preferred dipping consistency. Taste and adjust seasoning. Set aside.",
+    "Cook the noodles according to package instructions. Drain and rinse well under cold water.",
+    "Fill a large bowl with warm water and dampen a clean kitchen towel. Spread the towel flat over your work surface — this is where you'll assemble the rolls.",
+    "Soak one rice paper wrapper in the warm water for about 15 seconds until pliable but not floppy. Lay it flat on the towel. Arrange a small amount of noodles, carrot, cucumber, jalapeño, mango, avocado, and fresh herbs across the centre.",
+    "Fold the left and right sides of the wrapper inward over the filling, then roll from the bottom up, pulling firmly to keep it tight. Repeat with remaining wrappers and filling.",
+    "Serve immediately with peanut sauce for dipping. Leftover sauce keeps in the fridge for up to 5 days — thin with a splash of water before serving if it thickens."
+  ],
+  "nutrition": null
+}
