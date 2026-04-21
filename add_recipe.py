@@ -622,7 +622,7 @@ def add_card_to_index(d: dict) -> None:
     total_min = (prep or 0) + (cook or 0)
     time_str = f"{total_min} min" if total_min else ""
     servings_str = str(servings)
-    if servings_str and not any(w in servings_str.lower() for w in ["serving", "cookie", "piece", "portion", "litre", "liter", "ml", "oz", "cup", "lb", "bagel", "pizza"]):
+    if servings_str and not any(w in servings_str.lower() for w in ["serving", "cookie", "piece", "portion", "litre", "liter", "ml", "oz", "cup", "lb", "bagel", "pizza", "slice"]):
         servings_str = f"{servings_str} servings"
     meta_parts = [p for p in [time_str, servings_str] if p]
     meta_str = " · ".join(meta_parts)

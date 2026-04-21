@@ -1,0 +1,48 @@
+{
+  "title": "Vegan Lemon Olive Oil Cake",
+  "slug": "vegan-lemon-olive-oil-cake",
+  "type": "dessert",
+  "image_url": "images/vegan-lemon-olive-oil-cake.jpg",
+  "image_alt": "Vegan lemon olive oil cake with lemon icing and fresh berries",
+  "source_url": "https://www.rainbownourishments.com/vegan-lemon-olive-oil-cake/",
+  "source_label": "Original recipe: Rainbow Nourishments",
+  "prep_min": 15,
+  "cook_min": 60,
+  "servings": "10 slices",
+  "tags": "Vegan · DF",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Cake",
+      "items": [
+        {"amount": "2½ cups (315g)", "name": "all-purpose flour, spooned and levelled", "modified": false},
+        {"amount": "1¼ cups (250g)", "name": "granulated sugar", "modified": false},
+        {"amount": "3 tsp", "name": "baking powder", "modified": false},
+        {"amount": "pinch", "name": "salt", "modified": false},
+        {"amount": "1 cup (250ml)", "name": "dairy-free milk, room temperature", "modified": false},
+        {"amount": "½ cup (125ml)", "name": "extra-virgin olive oil", "modified": false},
+        {"amount": "⅓ cup (80ml)", "name": "lemon juice (about 2–3 lemons)", "modified": false},
+        {"amount": "~2 Tbsp", "name": "lemon zest", "modified": false},
+        {"amount": "1 tsp", "name": "vanilla extract (optional)", "modified": false}
+      ]
+    },
+    {
+      "label": "Lemon Icing (optional)",
+      "items": [
+        {"amount": "1½ cups (150g)", "name": "powdered sugar", "modified": false},
+        {"amount": "2–3 Tbsp", "name": "lemon juice", "modified": false},
+        {"amount": "1 cup (150g)", "name": "fresh berries, for topping", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 355°F (180°C). Line an 8-inch loaf pan with parchment paper.",
+    "Whisk together the flour, sugar, baking powder, and salt in a large bowl until no lumps remain. Add the dairy-free milk, olive oil, lemon juice, lemon zest, and vanilla. Mix until just combined — don't overmix.",
+    "Pour the batter into the prepared pan and smooth the top.",
+    "Bake for 1 hour until a toothpick inserted in the centre comes out with no wet batter (a few crumbs are fine). If the top is browning too quickly, tent loosely with foil.",
+    "Cool in the pan for 10 minutes, then transfer to a wire rack to cool completely.",
+    "For the icing: whisk lemon juice into the powdered sugar until smooth, adding juice gradually to reach a pourable consistency. Drizzle over the fully cooled cake and scatter berries on top. Keeps at room temperature for 1 day, refrigerated up to 3 days, or frozen (without icing) for up to 1 month."
+  ],
+  "nutrition": null
+}
