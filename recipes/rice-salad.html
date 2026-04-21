@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rice Salad — Bean Cooking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --ink: #1c1a18;
+      --muted: #6b6560;
+      --accent: #c07a3a;
+      --border: #e8e4de;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    .hero {
+      width: 100%;
+      max-height: 480px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .ctrl-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 0.1rem;
+    }
+
+    .ctrl-sep {
+      color: var(--border);
+      margin: 0 0.5rem;
+      user-select: none;
+    }
+
+    .ctrl-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.2em 0.6em;
+      color: var(--muted);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+      line-height: 1.4;
+    }
+
+    .ctrl-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .ctrl-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .source-link:hover { text-decoration: underline; }
+
+    .mods-box {
+      background: #fffbf5;
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .mods-box h3 {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .mods-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mods-box ul li {
+      font-size: 0.9rem;
+      color: var(--ink);
+      padding: 0.2rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .mods-box ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 2rem 0 1rem;
+    }
+
+    .ingredients {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ingredients li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .ingredients li:last-child { border-bottom: none; }
+
+    .ingredients .amount {
+      min-width: 120px;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .ingredients li.modified {
+      color: var(--accent);
+    }
+
+    .ingredients li.modified .amount {
+      color: var(--accent);
+      opacity: 0.8;
+    }
+
+    .steps {
+      list-style: none;
+      counter-reset: steps;
+      padding: 0;
+    }
+
+    .steps li {
+      counter-increment: steps;
+      padding: 1rem 0 1rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .steps li:last-child { border-bottom: none; }
+
+    .steps li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    .nutrition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .nutrition-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .nutrition-item .value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      display: block;
+    }
+
+    .nutrition-item .label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .variation-box {
+      background: #f7f9fb;
+      border-left: 3px solid #6b9ab8;
+      padding: 1rem 1.2rem;
+      margin-top: 1.5rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .variation-title {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b9ab8;
+      margin-bottom: 0.5rem;
+    }
+
+    .variation-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .variation-box ul li {
+      font-size: 0.9rem;
+      color: var(--ink);
+      padding: 0.2rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .variation-box ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #6b9ab8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .ingredient-group-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.75rem 0 0.3rem;
+      border-bottom: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">← Bean Cooking</a>
+  </nav>
+
+  <div class="hero">
+    <img src="images/rice-salad.jpg" alt="Rice salad with kidney beans, tomatoes, basil and toasted spiced almonds" />
+  </div>
+
+  <div class="content">
+
+    <div class="controls">
+      <span class="ctrl-label">Text</span>
+      <button class="ctrl-btn" id="font-down">A−</button>
+      <button class="ctrl-btn" id="font-up">A+</button>
+      <span class="ctrl-sep">·</span>
+      <button class="ctrl-btn scale-btn" data-scale="0.5">½×</button>
+      <button class="ctrl-btn scale-btn active" data-scale="1">1×</button>
+      <button class="ctrl-btn scale-btn" data-scale="2">2×</button>
+    </div>
+
+    <h1>Rice Salad</h1>
+
+    <div class="meta-row">
+      <span>Prep: 20 min</span>
+      <span>Cook: 20 min</span>
+      <span>Serves: 4</span>
+      <span>Vegan · GF · Original</span>
+    </div>
+
+    <h2>Ingredients</h2>
+    <ul class="ingredients">
+      <li class="ingredient-group-label"><span>Salad</span></li>
+      <li><span class="amount" data-amount="1 cup dry">1 cup dry</span><span>rice, cooked and cooled (~2 cups cooked)</span></li>
+      <li><span class="amount" data-amount="1 can">1 can</span><span>kidney beans, drained and rinsed</span></li>
+      <li><span class="amount" data-amount="1 head">1 head</span><span>lettuce, chopped (or 1 box mixed greens)</span></li>
+      <li><span class="amount" data-amount="2">2</span><span>tomatoes, chopped</span></li>
+      <li><span class="amount" data-amount="1 small">1 small</span><span>shallot, minced</span></li>
+      <li><span class="amount" data-amount="⅓ cup">⅓ cup</span><span>fresh basil, finely chopped</span></li>
+      <li class="ingredient-group-label"><span>Spiced Almonds</span></li>
+      <li><span class="amount" data-amount="½ cup">½ cup</span><span>sliced almonds</span></li>
+      <li><span class="amount" data-amount="to taste">to taste</span><span>Montreal chicken spice or spice blend of choice</span></li>
+      <li class="ingredient-group-label"><span>Dressing</span></li>
+      <li><span class="amount" data-amount="3 Tbsp">3 Tbsp</span><span>olive oil</span></li>
+      <li><span class="amount" data-amount="1½ Tbsp">1½ Tbsp</span><span>apple cider vinegar</span></li>
+      <li><span class="amount" data-amount="1 Tbsp">1 Tbsp</span><span>maple syrup</span></li>
+      <li><span class="amount" data-amount="1 tsp">1 tsp</span><span>Dijon mustard</span></li>
+      <li><span class="amount" data-amount=""></span><span>salt and pepper to taste</span></li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol class="steps">
+      <li>Cook the rice according to package instructions. Spread it out on a baking sheet or large plate to cool quickly — it needs to be fully cooled before assembling so it doesn't wilt the greens.</li>
+      <li>Toast the almond slices in a dry skillet over medium heat, stirring frequently. Once they start to colour, add a drizzle of oil and a generous pinch of Montreal chicken spice (or your spice blend). Toss to coat and cook another 30 seconds until fragrant. Transfer to a plate to cool.</li>
+      <li>Whisk together the olive oil, apple cider vinegar, maple syrup, and mustard. Season with salt and pepper. Taste and adjust — more vinegar for brightness, more maple for sweetness.</li>
+      <li>In a large bowl, combine the cooled rice, kidney beans, lettuce, tomatoes, shallot, and basil. Drizzle the dressing over and toss well.</li>
+      <li>Top with the spiced almonds just before serving so they stay crunchy.</li>
+    </ol>
+
+  </div>
+
+  <footer>Bean Cooking</footer>
+
+  <script>
+    (function () {
+      // Wake Lock — keep screen awake while viewing a recipe
+      var wakeLock = null;
+      function requestWakeLock() {
+        if ('wakeLock' in navigator) {
+          navigator.wakeLock.request('screen').then(function (lock) {
+            wakeLock = lock;
+          }).catch(function () {});
+        }
+      }
+      requestWakeLock();
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') requestWakeLock();
+      });
+
+      // Font size — scale html element so all rem and em units resize together
+      var htmlEl = document.documentElement;
+      var fs = parseFloat(localStorage.getItem('recipeFont') || '1');
+      htmlEl.style.fontSize = fs + 'em';
+
+      document.getElementById('font-down').addEventListener('click', function () {
+        fs = Math.max(0.5, parseFloat((fs - 0.5).toFixed(1)));
+        htmlEl.style.fontSize = fs + 'em';
+        localStorage.setItem('recipeFont', fs);
+      });
+
+      document.getElementById('font-up').addEventListener('click', function () {
+        fs = Math.min(20.0, parseFloat((fs + 0.5).toFixed(1)));
+        htmlEl.style.fontSize = fs + 'em';
+        localStorage.setItem('recipeFont', fs);
+      });
+
+      // Portion scaling
+      var FRACS = {'½':0.5,'¼':0.25,'¾':0.75,'⅓':1/3,'⅔':2/3,'⅛':0.125,'⅜':0.375,'⅝':0.625,'⅞':0.875};
+
+      function parse(s) {
+        s = s.trim();
+        var m = s.match(/^(\d+)\s*([½¼¾⅓⅔⅛⅜⅝⅞])/);
+        if (m) return parseInt(m[1]) + FRACS[m[2]];
+        if (FRACS[s]) return FRACS[s];
+        m = s.match(/^(\d+\.?\d*)/);
+        if (m) return parseFloat(m[1]);
+        return null;
+      }
+
+      function fmt(n) {
+        if (n <= 0) return '0';
+        var nice = [[1/8,'⅛'],[1/4,'¼'],[1/3,'⅓'],[3/8,'⅜'],[1/2,'½'],[5/8,'⅝'],[2/3,'⅔'],[3/4,'¾'],[7/8,'⅞']];
+        var whole = Math.floor(n), frac = n - whole;
+        if (frac < 0.04) return String(whole);
+        for (var i = 0; i < nice.length; i++) {
+          if (Math.abs(frac - nice[i][0]) < 0.05) return (whole > 0 ? whole : '') + nice[i][1];
+        }
+        return n.toFixed(1);
+      }
+
+      function scaleAmt(orig, factor) {
+        if (!orig.trim()) return orig;
+        // Handle ranges like "½–1" or "1-2"
+        var rm = orig.match(/^(.+?)\s*[–\-]\s*(\S+)(.*)/);
+        if (rm) {
+          var a = parse(rm[1]), b = parse(rm[2]);
+          if (a !== null && b !== null) return fmt(a * factor) + '–' + fmt(b * factor) + rm[3];
+        }
+        var m = orig.match(/^(\d+\s*[½¼¾⅓⅔⅛⅜⅝⅞]|[½¼¾⅓⅔⅛⅜⅝⅞]|\d+\.?\d*)/);
+        if (!m) return orig;
+        var num = parse(m[1]);
+        if (num === null) return orig;
+        return fmt(num * factor) + orig.slice(m[1].length);
+      }
+
+      document.querySelectorAll('.scale-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.scale-btn').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var factor = parseFloat(btn.dataset.scale);
+          document.querySelectorAll('.amount[data-amount]').forEach(function (el) {
+            el.textContent = scaleAmt(el.dataset.amount, factor);
+          });
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

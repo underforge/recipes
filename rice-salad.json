@@ -1,0 +1,53 @@
+{
+  "title": "Rice Salad",
+  "slug": "rice-salad",
+  "type": "salad",
+  "image_url": "images/rice-salad.jpg",
+  "image_alt": "Rice salad with kidney beans, tomatoes, basil and toasted spiced almonds",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 20,
+  "cook_min": 20,
+  "servings": "4",
+  "tags": "Vegan · GF · Original",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Salad",
+      "items": [
+        {"amount": "1 cup dry", "name": "rice, cooked and cooled (~2 cups cooked)", "modified": false},
+        {"amount": "1 can", "name": "kidney beans, drained and rinsed", "modified": false},
+        {"amount": "1 head", "name": "lettuce, chopped (or 1 box mixed greens)", "modified": false},
+        {"amount": "2", "name": "tomatoes, chopped", "modified": false},
+        {"amount": "1 small", "name": "shallot, minced", "modified": false},
+        {"amount": "⅓ cup", "name": "fresh basil, finely chopped", "modified": false}
+      ]
+    },
+    {
+      "label": "Spiced Almonds",
+      "items": [
+        {"amount": "½ cup", "name": "sliced almonds", "modified": false},
+        {"amount": "to taste", "name": "Montreal chicken spice or spice blend of choice", "modified": false}
+      ]
+    },
+    {
+      "label": "Dressing",
+      "items": [
+        {"amount": "3 Tbsp", "name": "olive oil", "modified": false},
+        {"amount": "1½ Tbsp", "name": "apple cider vinegar", "modified": false},
+        {"amount": "1 Tbsp", "name": "maple syrup", "modified": false},
+        {"amount": "1 tsp", "name": "Dijon mustard", "modified": false},
+        {"amount": "", "name": "salt and pepper to taste", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Cook the rice according to package instructions. Spread it out on a baking sheet or large plate to cool quickly — it needs to be fully cooled before assembling so it doesn't wilt the greens.",
+    "Toast the almond slices in a dry skillet over medium heat, stirring frequently. Once they start to colour, add a drizzle of oil and a generous pinch of Montreal chicken spice (or your spice blend). Toss to coat and cook another 30 seconds until fragrant. Transfer to a plate to cool.",
+    "Whisk together the olive oil, apple cider vinegar, maple syrup, and mustard. Season with salt and pepper. Taste and adjust — more vinegar for brightness, more maple for sweetness.",
+    "In a large bowl, combine the cooled rice, kidney beans, lettuce, tomatoes, shallot, and basil. Drizzle the dressing over and toss well.",
+    "Top with the spiced almonds just before serving so they stay crunchy."
+  ],
+  "nutrition": null
+}
