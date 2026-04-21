@@ -34,9 +34,9 @@
     {
       "label": "Dressing",
       "items": [
-        {"amount": "3 Tbsp", "name": "olive oil", "modified": false},
-        {"amount": "1½ Tbsp", "name": "apple cider vinegar", "modified": false},
-        {"amount": "1 Tbsp", "name": "maple syrup", "modified": false},
+        {"amount": "2 Tbsp", "name": "olive oil", "modified": false},
+        {"amount": "2 Tbsp", "name": "apple cider vinegar", "modified": false},
+        {"amount": "2 Tbsp", "name": "maple syrup", "modified": false},
         {"amount": "1 tsp", "name": "Dijon mustard", "modified": false},
         {"amount": "", "name": "salt and pepper to taste", "modified": false}
       ]
@@ -45,7 +45,7 @@
   "steps": [
     "Cook the rice according to package instructions. Spread it out on a baking sheet or large plate to cool quickly — it needs to be fully cooled before assembling so it doesn't wilt the greens.",
     "Toast the almond slices in a dry skillet over medium heat, stirring frequently. Once they start to colour, add a drizzle of oil and a generous pinch of Montreal chicken spice (or your spice blend). Toss to coat and cook another 30 seconds until fragrant. Transfer to a plate to cool.",
-    "Whisk together the olive oil, apple cider vinegar, maple syrup, and mustard. Season with salt and pepper. Taste and adjust — more vinegar for brightness, more maple for sweetness.",
+    "Whisk together equal parts olive oil, apple cider vinegar, and maple syrup with a small spoonful of mustard. Season with salt and pepper to taste.",
     "In a large bowl, combine the cooled rice, kidney beans, lettuce, tomatoes, shallot, and basil. Drizzle the dressing over and toss well.",
     "Top with the spiced almonds just before serving so they stay crunchy."
   ],
