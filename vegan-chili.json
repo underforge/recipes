@@ -1,0 +1,63 @@
+{
+  "title": "Vegan Chili",
+  "slug": "vegan-chili",
+  "type": "dinner",
+  "image_url": "images/vegan-chili.jpg",
+  "image_alt": "Vegan chili with black beans, pinto beans and vegetables",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 20,
+  "cook_min": 10,
+  "servings": "4–6",
+  "tags": "Vegan · GF · Original · Instant Pot",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Vegetables",
+      "items": [
+        {"amount": "2 Tbsp", "name": "olive oil", "modified": false},
+        {"amount": "1", "name": "red onion, diced", "modified": false},
+        {"amount": "1", "name": "red bell pepper, diced", "modified": false},
+        {"amount": "2", "name": "carrots, diced", "modified": false},
+        {"amount": "2 ribs", "name": "celery, diced", "modified": false},
+        {"amount": "4 cloves", "name": "garlic, minced", "modified": false}
+      ]
+    },
+    {
+      "label": "Spices",
+      "items": [
+        {"amount": "2 Tbsp", "name": "chili powder", "modified": false},
+        {"amount": "2 tsp", "name": "cumin", "modified": false},
+        {"amount": "1½ tsp", "name": "smoked paprika", "modified": false},
+        {"amount": "1 tsp", "name": "oregano", "modified": false},
+        {"amount": "1", "name": "bay leaf", "modified": false},
+        {"amount": "½ tsp", "name": "salt (plus ¼ tsp more at the end)", "modified": false}
+      ]
+    },
+    {
+      "label": "Beans & Liquid",
+      "items": [
+        {"amount": "1 large can", "name": "diced tomatoes", "modified": false},
+        {"amount": "2 cans", "name": "black beans, drained and rinsed", "modified": false},
+        {"amount": "1 can", "name": "pinto beans, drained and rinsed", "modified": false},
+        {"amount": "2 cups", "name": "vegetable broth", "modified": false}
+      ]
+    },
+    {
+      "label": "Finish",
+      "items": [
+        {"amount": "2 Tbsp", "name": "fresh cilantro, chopped", "modified": false},
+        {"amount": "1 tsp", "name": "lime juice", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Set Instant Pot to Sauté. Add olive oil, then onion, bell pepper, carrots, celery, and ½ tsp salt. Stir and cook for 7–10 minutes until softened.",
+    "Add garlic, chili powder, cumin, smoked paprika, and oregano. Stir and cook for 1 minute until fragrant.",
+    "Add the diced tomatoes, black beans, pinto beans, vegetable broth, and bay leaf. Stir to combine. Cancel Sauté, seal the lid, and pressure cook on High for 5 minutes. Quick release.",
+    "Discard the bay leaf. Scoop out 1½ cups of chili, blend until smooth, and stir back into the pot — this thickens the chili without losing the chunky texture.",
+    "Stir in the cilantro, lime juice, and remaining ¼ tsp salt. Taste and adjust seasoning. Serve with Vegan Cornbread."
+  ],
+  "nutrition": null
+}

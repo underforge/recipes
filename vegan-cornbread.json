@@ -1,0 +1,42 @@
+{
+  "title": "Vegan Cornbread",
+  "slug": "vegan-cornbread",
+  "type": "dinner",
+  "image_url": "images/vegan-cornbread.jpg",
+  "image_alt": "Golden vegan cornbread cut into squares",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 5,
+  "cook_min": 25,
+  "servings": 4,
+  "tags": "Vegan · Original",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Dry",
+      "items": [
+        {"amount": "1¼ cups", "name": "all-purpose flour", "modified": false},
+        {"amount": "1 cup", "name": "cornmeal", "modified": false},
+        {"amount": "⅔ cup", "name": "sugar", "modified": false},
+        {"amount": "1 Tbsp", "name": "baking powder", "modified": false},
+        {"amount": "1 tsp", "name": "salt", "modified": false}
+      ]
+    },
+    {
+      "label": "Wet",
+      "items": [
+        {"amount": "1¼ cups", "name": "oat milk", "modified": false},
+        {"amount": "⅓ cup", "name": "canola oil", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 400°F (205°C). Lightly grease an 8×8 inch baking pan.",
+    "Whisk together the flour, cornmeal, sugar, baking powder, and salt in a large bowl.",
+    "Pour in the oat milk and canola oil. Stir until just well combined — don't overmix.",
+    "Pour batter into the prepared pan and smooth the top.",
+    "Bake for 20–25 minutes until a toothpick inserted in the centre comes out clean. Pairs great with Vegan Chili."
+  ],
+  "nutrition": null
+}
