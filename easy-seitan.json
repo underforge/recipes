@@ -1,0 +1,57 @@
+{
+  "title": "Easy Seitan",
+  "slug": "easy-seitan",
+  "type": "dinner",
+  "image_url": "https://itdoesnttastelikechicken.com/wp-content/uploads/2021/08/The-quickest-and-easiest-seitan-recipe-20-minutes-chicken-vegan-quick-easy.jpg",
+  "image_alt": "Crispy seitan pieces tossed in sweet chili sauce with sesame seeds and green onions",
+  "source_url": "https://itdoesnttastelikechicken.com/the-quickest-and-easiest-seitan-recipe-vegan-chicken/",
+  "source_label": "Original recipe: It Doesn't Taste Like Chicken",
+  "prep_min": 5,
+  "cook_min": 15,
+  "servings": 4,
+  "tags": "Vegan",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Seitan",
+      "items": [
+        {"amount": "¾ cup", "name": "vital wheat gluten", "modified": false},
+        {"amount": "¼ cup", "name": "all-purpose flour", "modified": false},
+        {"amount": "1 tsp", "name": "vegetable broth powder", "modified": false},
+        {"amount": "½ tsp", "name": "onion powder", "modified": false},
+        {"amount": "½ tsp", "name": "garlic powder", "modified": false},
+        {"amount": "¼ tsp", "name": "salt", "modified": false},
+        {"amount": "⅔ cup", "name": "water", "modified": false}
+      ]
+    },
+    {
+      "label": "Sauce (optional)",
+      "items": [
+        {"amount": "3 Tbsp", "name": "Thai sweet chili sauce", "modified": false},
+        {"amount": "3 Tbsp", "name": "hoisin sauce", "modified": false},
+        {"amount": "2 Tbsp", "name": "soy sauce", "modified": false},
+        {"amount": "2 Tbsp", "name": "water", "modified": false},
+        {"amount": "1 Tbsp", "name": "rice vinegar", "modified": false},
+        {"amount": "½ tsp", "name": "sesame oil", "modified": false}
+      ]
+    },
+    {
+      "label": "For Frying & Garnish",
+      "items": [
+        {"amount": "2 Tbsp", "name": "neutral oil (canola or vegetable)", "modified": false},
+        {"amount": "1 Tbsp", "name": "sesame seeds", "modified": false},
+        {"amount": "small handful", "name": "green onions or chives, chopped", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Add about an inch of water to a pot fitted with a steamer basket and bring to a light boil.",
+    "Whisk together the vital wheat gluten, flour, broth powder, onion powder, garlic powder, and salt. Pour in the water and mix until a dough ball forms. Lightly grease the steamer basket, tear off bite-sized pieces of dough, and place them in a single layer.",
+    "Cover and steam for 10 minutes.",
+    "While the seitan steams, whisk together the sweet chili sauce, hoisin, soy sauce, water, rice vinegar, and sesame oil in a small bowl. Set aside.",
+    "Heat the oil in a large skillet over medium-high heat. Using tongs, transfer the steamed seitan pieces to the hot oil. Fry for a few minutes per side until golden brown and crispy.",
+    "Remove from heat, pour the sauce over, and toss to coat. Garnish with sesame seeds and green onions. Serve hot."
+  ],
+  "nutrition": null
+}
