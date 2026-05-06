@@ -10,9 +10,17 @@
   "cook_min": 20,
   "servings": "10 muffins",
   "tags": "Vegetarian",
-  "card_tag": "Modified",
-  "modifications": [
-    "Omitted sugar muffin-top topping"
+  "card_tag": "",
+  "modifications": [],
+  "variations": [
+    {
+      "title": "Triple Batch",
+      "items": [
+        "Triple all ingredients",
+        "Makes approximately 34 standard muffins",
+        "Bake time stays the same — 18–20 minutes"
+      ]
+    }
   ],
   "ingredient_groups": [
     {
