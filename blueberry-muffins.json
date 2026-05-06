@@ -1,0 +1,51 @@
+{
+  "title": "Blueberry Muffins",
+  "slug": "blueberry-muffins",
+  "type": "breakfast",
+  "image_url": "images/blueberry-muffins.jpg",
+  "image_alt": "Golden blueberry muffins with domed tops",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 15,
+  "cook_min": 20,
+  "servings": "10 muffins",
+  "tags": "Vegetarian",
+  "card_tag": "Modified",
+  "modifications": [
+    "Omitted sugar muffin-top topping"
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Dry",
+      "items": [
+        {"amount": "1¾ cups (210g)", "name": "all-purpose flour, spooned and levelled", "modified": false},
+        {"amount": "¾ cup (150g)", "name": "granulated sugar", "modified": false},
+        {"amount": "1½ tsp", "name": "baking powder (aluminium-free)", "modified": false},
+        {"amount": "½ tsp", "name": "fine sea salt", "modified": false}
+      ]
+    },
+    {
+      "label": "Wet",
+      "items": [
+        {"amount": "⅓ cup (80ml)", "name": "vegetable, safflower, or avocado oil", "modified": false},
+        {"amount": "1 large", "name": "egg", "modified": false},
+        {"amount": "⅓ cup (80ml)", "name": "milk or non-dairy milk, plus more as needed", "modified": false},
+        {"amount": "1½ tsp", "name": "vanilla extract", "modified": false}
+      ]
+    },
+    {
+      "label": "Fruit",
+      "items": [
+        {"amount": "1 generous cup (170–225g)", "name": "fresh or frozen blueberries", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 400°F (204°C). Line a muffin tin with paper liners — 8 cups for large muffins, 10 for standard. Lightly grease or spray the top surface of the tin to prevent oversized tops from sticking.",
+    "Whisk together the flour, sugar, baking powder, and salt in a large bowl.",
+    "In a measuring jug, add the oil, then crack in the egg. Pour in enough milk to bring the total liquid to the 1-cup line (about ⅓ cup milk). Add the vanilla and whisk until combined.",
+    "Pour the wet ingredients into the dry and mix gently until just combined — a few streaks of flour are fine. Fold in the blueberries. Do not overmix or the muffins will be tough.",
+    "Divide the batter evenly among the lined cups, filling each almost to the top. Bake for 18–20 minutes until the tops are golden and a toothpick inserted in the centre comes out clean. Cool in the pan for 5 minutes, then transfer to a wire rack."
+  ],
+  "nutrition": null
+}
