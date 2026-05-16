@@ -8,9 +8,11 @@
   "prep_min": 10,
   "cook_min": 30,
   "servings": 9,
-  "tags": "Vegetarian · GF · Dairy-free option",
+  "tags": "Vegan · GF · Dairy-free option",
   "card_tag": "",
-  "modifications": [],
+  "modifications": [
+    "Replaced 2 eggs with 2 flax eggs (2 Tbsp ground flaxseed + 6 Tbsp water)"
+  ],
   "ingredient_groups": [
     {
       "label": "",
@@ -18,7 +20,8 @@
         {"amount": "2 cups", "name": "rolled oats", "modified": false},
         {"amount": "½ cup", "name": "unsweetened cocoa powder", "modified": false},
         {"amount": "2", "name": "ripe bananas", "modified": false},
-        {"amount": "2", "name": "large eggs", "modified": false},
+        {"amount": "2 Tbsp", "name": "ground flaxseed ✱ replaces 2 eggs", "modified": true},
+        {"amount": "6 Tbsp", "name": "water ✱ for flax eggs", "modified": true},
         {"amount": "½ cup", "name": "milk", "modified": false},
         {"amount": "¼ cup", "name": "honey or maple syrup", "modified": false},
         {"amount": "1 tsp", "name": "baking powder", "modified": false},
@@ -30,9 +33,10 @@
     }
   ],
   "steps": [
+    "Mix the ground flaxseed with 6 Tbsp water and set aside for 5 minutes until it becomes gel-like.",
     "Preheat oven to 350°F (175°C). Grease an 8-inch square baking pan.",
     "Blend the rolled oats in a blender or food processor until they resemble flour.",
-    "In a large bowl, mash the bananas until smooth. Whisk in the eggs, milk, honey (or maple syrup), and vanilla extract.",
+    "In a large bowl, mash the bananas until smooth. Whisk in the flax eggs, milk, honey (or maple syrup), and vanilla extract.",
     "Add the blended oats, cocoa powder, baking powder, and salt. Mix until just combined.",
     "Fold in the walnuts and chocolate chips if using.",
     "Pour the batter into the prepared pan and smooth the top.",
