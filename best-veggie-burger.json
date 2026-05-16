@@ -1,0 +1,55 @@
+{
+  "title": "Best Veggie Burger",
+  "slug": "best-veggie-burger",
+  "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2018/06/veggie-burger.jpg",
+  "image_alt": "Veggie burger with mushroom and walnut patty on a bun with toppings",
+  "source_url": "https://www.loveandlemons.com/best-veggie-burger-recipe/",
+  "source_label": "Original recipe: Love and Lemons",
+  "prep_min": 80,
+  "cook_min": 60,
+  "servings": 8,
+  "tags": "Vegan · Dairy-free",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Patties",
+      "items": [
+        {"amount": "2 Tbsp", "name": "extra-virgin olive oil, plus more for drizzling", "modified": false},
+        {"amount": "2", "name": "shallots, chopped (⅔ cup)", "modified": false},
+        {"amount": "16 oz", "name": "mushrooms (shiitake and portobello), stemmed and diced", "modified": false},
+        {"amount": "2 Tbsp", "name": "tamari", "modified": false},
+        {"amount": "2 Tbsp", "name": "balsamic vinegar", "modified": false},
+        {"amount": "1 Tbsp", "name": "mirin (or ½ tsp maple syrup)", "modified": false},
+        {"amount": "2", "name": "garlic cloves, minced", "modified": false},
+        {"amount": "½ tsp", "name": "smoked paprika", "modified": false},
+        {"amount": "2 tsp", "name": "sriracha", "modified": false},
+        {"amount": "½ cup", "name": "walnuts, chopped", "modified": false},
+        {"amount": "¼ cup", "name": "ground flaxseed", "modified": false},
+        {"amount": "2 cups", "name": "cooked short-grain brown rice (freshly cooked)", "modified": false},
+        {"amount": "1 cup", "name": "panko bread crumbs, divided", "modified": false},
+        {"amount": "to taste", "name": "sea salt and freshly ground black pepper", "modified": false}
+      ]
+    },
+    {
+      "label": "To Serve",
+      "items": [
+        {"amount": "", "name": "vegan Worcestershire sauce, for brushing", "modified": false},
+        {"amount": "", "name": "nonstick cooking spray", "modified": false},
+        {"amount": "8", "name": "hamburger buns", "modified": false},
+        {"amount": "", "name": "desired fixings (lettuce, tomato, onion, etc.)", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Heat olive oil in a medium skillet over medium heat. Add shallots and sauté until soft, about 1 minute. Add mushrooms with a pinch of salt and cook until soft and browned, 6–9 minutes.",
+    "Stir in tamari, balsamic vinegar, and mirin. Reduce heat, then add garlic, smoked paprika, and sriracha. Stir to combine and let cool slightly.",
+    "In a food processor, combine the mushroom mixture, walnuts, flaxseed, brown rice, and ½ cup of the panko. Pulse until combined but with some texture remaining — don't over-process.",
+    "Transfer mixture to a bowl and fold in the remaining ½ cup panko.",
+    "Form into 8 patties, place on a plate, and refrigerate for at least 1 hour (or up to 1 day ahead).",
+    "To grill: Preheat grill to medium-high. Brush patties with olive oil, spray the grill with cooking spray, and cook 7 minutes per side until charred and cooked through.",
+    "To cook on the stovetop: Heat a cast-iron skillet over medium heat with a drizzle of oil. Cook patties 5–6 minutes per side until charred.",
+    "Brush cooked patties with vegan Worcestershire sauce and serve on buns with desired toppings."
+  ],
+  "nutrition": null
+}

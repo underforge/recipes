@@ -1,0 +1,43 @@
+{
+  "title": "Chocolate Oat Cake",
+  "slug": "chocolate-oat-cake",
+  "image_url": "https://poulef.com/wp-content/uploads/2026/05/oussamadr_Chocolate_Oat_Cake__taken_by_professional_chef_with_6d212d4a-7bca-4d60-9742-9ec2f39bc117_0.webp",
+  "image_alt": "Fudgy chocolate oat cake sliced into squares",
+  "source_url": "https://poulef.com/chocolate-oat-cake-3/",
+  "source_label": "Original recipe: Poulef",
+  "prep_min": 10,
+  "cook_min": 30,
+  "servings": 9,
+  "tags": "Vegetarian · GF · Dairy-free option",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "",
+      "items": [
+        {"amount": "2 cups", "name": "rolled oats", "modified": false},
+        {"amount": "½ cup", "name": "unsweetened cocoa powder", "modified": false},
+        {"amount": "2", "name": "ripe bananas", "modified": false},
+        {"amount": "2", "name": "large eggs", "modified": false},
+        {"amount": "½ cup", "name": "milk", "modified": false},
+        {"amount": "¼ cup", "name": "honey or maple syrup", "modified": false},
+        {"amount": "1 tsp", "name": "baking powder", "modified": false},
+        {"amount": "1 tsp", "name": "vanilla extract", "modified": false},
+        {"amount": "½ cup", "name": "walnuts, chopped", "modified": false},
+        {"amount": "⅓ cup", "name": "dark chocolate chips (optional)", "modified": false},
+        {"amount": "pinch", "name": "salt", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Preheat oven to 350°F (175°C). Grease an 8-inch square baking pan.",
+    "Blend the rolled oats in a blender or food processor until they resemble flour.",
+    "In a large bowl, mash the bananas until smooth. Whisk in the eggs, milk, honey (or maple syrup), and vanilla extract.",
+    "Add the blended oats, cocoa powder, baking powder, and salt. Mix until just combined.",
+    "Fold in the walnuts and chocolate chips if using.",
+    "Pour the batter into the prepared pan and smooth the top.",
+    "Bake for 25–30 minutes, until the centre is just set. Don't overbake — it should stay fudgy.",
+    "Let cool in the pan for at least 15 minutes before slicing. The cake gets richer as it cools."
+  ],
+  "nutrition": null
+}
