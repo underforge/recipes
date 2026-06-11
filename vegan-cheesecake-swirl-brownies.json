@@ -1,0 +1,79 @@
+{
+  "title": "Vegan Cheesecake Swirl Brownies",
+  "slug": "vegan-cheesecake-swirl-brownies",
+  "type": "dessert",
+  "image_url": "images/vegan-cheesecake-swirl-brownies.jpg",
+  "image_alt": "Fudgy vegan brownies with a marbled cheesecake and chocolate swirl",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 30,
+  "cook_min": 35,
+  "servings": "9 large bars",
+  "tags": "Vegan · Original",
+  "card_tag": "Original",
+  "modifications": [],
+  "variations": [
+    {
+      "title": "Nut-Free",
+      "items": [
+        "Replace the cashews with 1½ cups vegan cream cheese",
+        "Reduce the maple syrup to 2 Tbsp",
+        "Blend the same way until smooth"
+      ]
+    },
+    {
+      "title": "Extra Fudgy",
+      "items": [
+        "Bake 2 minutes less than the time below",
+        "Chill overnight instead of the minimum 3 hours before slicing"
+      ]
+    }
+  ],
+  "ingredient_groups": [
+    {
+      "label": "Brownie Layer",
+      "items": [
+        {"amount": "1 cup", "name": "all-purpose flour", "modified": false},
+        {"amount": "1 cup", "name": "granulated sugar", "modified": false},
+        {"amount": "½ cup", "name": "unsweetened cocoa powder", "modified": false},
+        {"amount": "½ tsp", "name": "baking powder", "modified": false},
+        {"amount": "¼ tsp", "name": "salt", "modified": false},
+        {"amount": "½ cup", "name": "melted coconut oil or vegan butter", "modified": false},
+        {"amount": "½ cup", "name": "non-dairy milk (oat or soy)", "modified": false},
+        {"amount": "1 tsp", "name": "vanilla extract", "modified": false},
+        {"amount": "1 Tbsp + 3 Tbsp water", "name": "ground flaxseed (flax egg)", "modified": false},
+        {"amount": "⅓ cup", "name": "vegan chocolate chips, divided", "modified": false}
+      ]
+    },
+    {
+      "label": "Cheesecake Swirl",
+      "items": [
+        {"amount": "1½ cups", "name": "raw cashews, soaked in hot water 1 hour and drained", "modified": false},
+        {"amount": "¼ cup", "name": "coconut cream (thick part of a chilled can)", "modified": false},
+        {"amount": "¼ cup", "name": "maple syrup", "modified": false},
+        {"amount": "2 Tbsp", "name": "lemon juice", "modified": false},
+        {"amount": "1 tsp", "name": "vanilla extract", "modified": false},
+        {"amount": "", "name": "salt, to taste", "modified": false}
+      ]
+    },
+    {
+      "label": "Dark Swirl & Topping",
+      "items": [
+        {"amount": "2 Tbsp", "name": "cocoa powder", "modified": false},
+        {"amount": "1 Tbsp", "name": "melted coconut oil", "modified": false},
+        {"amount": "to taste", "name": "extra vegan chocolate chips, for topping", "modified": false},
+        {"amount": "1 square (optional)", "name": "vegan dark chocolate, grated, for garnish", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Combine the ground flaxseed with 3 Tbsp water and set aside for 5 minutes to gel — this is your flax egg. Preheat oven to 350°F (175°C) and line an 8×8 pan with parchment paper.",
+    "Whisk together the flour, sugar, cocoa powder, baking powder, and salt in a large bowl. Add the melted coconut oil, non-dairy milk, vanilla, and flax egg, and mix until just combined. Stir in half the chocolate chips. Spread about ¾ of the batter into the prepared pan, reserving the rest.",
+    "Drain the soaked cashews and blend with the coconut cream, maple syrup, lemon juice, vanilla, and a pinch of salt until completely smooth — there should be no gritty texture.",
+    "Pour the cheesecake mixture over the brownie batter in the pan. Drop the reserved brownie batter over the top in spoonfuls. Stir together the cocoa powder and melted coconut oil and drizzle over everything. Drag a knife through the layers in a few gentle swirling motions to marble the top — don't overdo it or the layers will blend together.",
+    "Sprinkle the remaining chocolate chips over the top and press in gently.",
+    "Bake for 30–35 minutes. The centre should still look slightly underset and jiggly — it firms up as it cools. Don't overbake or the brownies will lose their fudgy texture.",
+    "Cool completely at room temperature, then chill in the fridge for at least 3 hours (overnight is even better) before slicing. Use a hot knife for clean cuts. Garnish with grated dark chocolate if desired. Keeps refrigerated for 5 days or frozen for up to 2 months."
+  ],
+  "nutrition": null
+}
