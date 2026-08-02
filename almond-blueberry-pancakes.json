@@ -1,0 +1,48 @@
+{
+  "title": "Almond Blueberry Pancakes",
+  "slug": "almond-blueberry-pancakes",
+  "type": "breakfast",
+  "image_url": "images/almond-blueberry-pancakes.jpg",
+  "image_alt": "Stack of pancakes bursting with fresh blueberries",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 10,
+  "cook_min": 15,
+  "servings": "8 pancakes",
+  "tags": "Vegan",
+  "card_tag": "",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "label": "Dry",
+      "items": [
+        {"amount": "1 cup", "name": "almond flour", "modified": false},
+        {"amount": "½ cup", "name": "all-purpose flour", "modified": false},
+        {"amount": "2 tbsp", "name": "sugar", "modified": false},
+        {"amount": "¾ tsp", "name": "baking powder", "modified": false},
+        {"amount": "⅛ tsp", "name": "salt", "modified": false}
+      ]
+    },
+    {
+      "label": "Wet",
+      "items": [
+        {"amount": "¼ cup", "name": "oil", "modified": false},
+        {"amount": "1½ cups", "name": "oat or almond milk, to a good consistency", "modified": false}
+      ]
+    },
+    {
+      "label": "Fruit",
+      "items": [
+        {"amount": "as you like", "name": "blueberries, fresh or frozen", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Whisk together the almond flour, all-purpose flour, sugar, baking powder, and salt in a large bowl.",
+    "Add the oil, then pour in the milk gradually, whisking until the batter reaches a good pourable consistency — thick enough to hold its shape but easy to spread. You may not need all the milk, or you may need a splash more.",
+    "Fold in the blueberries, as many as you like.",
+    "Heat a lightly oiled skillet or griddle over medium heat. Pour about ¼ cup of batter per pancake and cook until bubbles form on the surface and the edges look set, 2–3 minutes.",
+    "Flip and cook the other side until golden, another 1–2 minutes. Repeat with the remaining batter, adjusting the heat as needed. Serve warm."
+  ],
+  "nutrition": null
+}
