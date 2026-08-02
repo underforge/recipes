@@ -35,13 +35,19 @@
       "items": [
         {"amount": "as you like", "name": "blueberries, fresh or frozen", "modified": false}
       ]
+    },
+    {
+      "label": "For the Pan",
+      "items": [
+        {"amount": "a little", "name": "vegan butter", "modified": false}
+      ]
     }
   ],
   "steps": [
     "Whisk together the almond flour, all-purpose flour, sugar, baking powder, and salt in a large bowl.",
     "Add the oil, then pour in the milk gradually, whisking until the batter reaches a good pourable consistency — thick enough to hold its shape but easy to spread. You may not need all the milk, or you may need a splash more.",
     "Fold in the blueberries, as many as you like.",
-    "Heat a lightly oiled skillet or griddle over medium heat. Pour about ¼ cup of batter per pancake and cook until bubbles form on the surface and the edges look set, 2–3 minutes.",
+    "Heat a skillet or griddle over medium heat and melt a little vegan butter to coat the pan. Pour about ¼ cup of batter per pancake and cook until bubbles form on the surface and the edges look set, 2–3 minutes.",
     "Flip and cook the other side until golden, another 1–2 minutes. Repeat with the remaining batter, adjusting the heat as needed. Serve warm."
   ],
   "nutrition": null
