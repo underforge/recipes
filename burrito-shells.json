@@ -1,0 +1,35 @@
+{
+  "title": "Burrito Shells",
+  "slug": "burrito-shells",
+  "type": "dinner",
+  "image_url": "images/burrito-shells.jpg",
+  "image_alt": "Stack of soft homemade flour tortillas",
+  "source_url": "",
+  "source_label": "",
+  "prep_min": 10,
+  "cook_min": 10,
+  "servings": "4 shells",
+  "tags": "Vegan · Soy-free",
+  "card_tag": "Original",
+  "modifications": [],
+  "ingredient_groups": [
+    {
+      "items": [
+        {"amount": "2 cups", "name": "all-purpose flour, plus a spoonful or two if needed", "modified": false},
+        {"amount": "½ tsp", "name": "salt", "modified": false},
+        {"amount": "¼ cup", "name": "fat (soy-free margarine, oil, etc.)", "modified": false},
+        {"amount": "¾ cup", "name": "warm water", "modified": false}
+      ]
+    }
+  ],
+  "steps": [
+    "Stir together the flour and salt in a large bowl.",
+    "Cut in the fat until it is fully incorporated into the flour.",
+    "Add the warm water and work into a dough. Knead for a couple of minutes. If it is too sticky to handle, add a spoonful or two of flour.",
+    "Once worked into a ball, divide into 4 smaller balls.",
+    "Let the dough rest until it is workable, about 15–30 minutes.",
+    "Roll each ball out thin on a floured cutting board.",
+    "Cook on a dry pan over medium heat until it puffs and bubbles, then flip and repeat on the other side."
+  ],
+  "nutrition": null
+}
