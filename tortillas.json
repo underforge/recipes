@@ -1,24 +1,40 @@
 {
-  "title": "Burrito Shells",
-  "slug": "burrito-shells",
+  "title": "Tortillas",
+  "slug": "tortillas",
   "type": "dinner",
-  "image_url": "images/burrito-shells.jpg",
+  "image_url": "images/tortillas.jpg",
   "image_alt": "Stack of soft homemade flour tortillas",
   "source_url": "",
   "source_label": "",
   "prep_min": 10,
   "cook_min": 10,
-  "servings": "4 shells",
+  "servings": "4 tortillas",
   "tags": "Vegan · Soy-free",
   "card_tag": "Original",
   "modifications": [],
   "ingredient_groups": [
     {
       "items": [
-        {"amount": "2 cups", "name": "all-purpose flour, plus a spoonful or two if needed", "modified": false},
-        {"amount": "½ tsp", "name": "salt", "modified": false},
-        {"amount": "¼ cup", "name": "fat (soy-free margarine, oil, etc.)", "modified": false},
-        {"amount": "¾ cup", "name": "warm water", "modified": false}
+        {
+          "amount": "2 cups",
+          "name": "all-purpose flour, plus a spoonful or two if needed",
+          "modified": false
+        },
+        {
+          "amount": "½ tsp",
+          "name": "salt",
+          "modified": false
+        },
+        {
+          "amount": "¼ cup",
+          "name": "fat (soy-free margarine, oil, etc.)",
+          "modified": false
+        },
+        {
+          "amount": "¾ cup",
+          "name": "warm water",
+          "modified": false
+        }
       ]
     }
   ],
